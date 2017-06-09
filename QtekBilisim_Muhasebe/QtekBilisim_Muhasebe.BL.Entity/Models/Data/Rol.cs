@@ -15,12 +15,12 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
     public partial class Rol
     {
         public int RolID { get; set; }
+        public string RolAd { get; set; }
         public bool AktifMi { get; set; }
         public bool SilindiMi { get; set; }
         public System.DateTime KayitTarih { get; set; }
         public System.DateTime GuncellemeTarih { get; set; }
         public int DilID { get; set; }
         public int SirketID { get; set; }
-        public string RolAd { get; set; }
     }
 }

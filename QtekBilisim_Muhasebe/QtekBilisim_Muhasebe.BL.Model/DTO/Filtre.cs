@@ -10,6 +10,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
     {
         private bool _aktifMi;
         private int _dilID;
+        private int _kullaniciID;
         private bool _silindiMi;
         private int _sirketID;
 
@@ -37,6 +38,20 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
                 _dilID = value;
             }
         }
+
+        public int KullaniciID
+        {
+            get
+            {
+                return _kullaniciID;
+            }
+
+            set
+            {
+                _kullaniciID = value;
+            }
+        }
+
         public bool SilindiMi
         {
             get

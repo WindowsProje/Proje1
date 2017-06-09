@@ -9,6 +9,6 @@ namespace QtekBilisim_Muhasebe.BL.Repository.Repositories
 {
     public interface IHataKayitRepository:IRepository<HataKayit>
     {
-        Task<int> EnBuyukHataKayitIDAsync();
+        int EnBuyukHataKayitID();
     }
 }

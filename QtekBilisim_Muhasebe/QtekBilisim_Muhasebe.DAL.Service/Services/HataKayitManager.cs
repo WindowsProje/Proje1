@@ -12,7 +12,7 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
 {
     static class HataKayitManager
     {
-        public async static Task<string> HataKayitEkleAsync(Exception error)
+        public static string HataKayitEkle(Exception error)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
                     int year = DateTime.Now.Year;
                     int month = DateTime.Now.Month;
                     int day = DateTime.Now.Day;
-                    string errorCode = "ECoX" + year + month + day + "-" + code.Substring(0, 12);
+                    string errorCode = "EC" + year + month + day + "-" + code.Substring(0, 12);
                     string innerException = string.Empty;
                     if (error.InnerException != null)
                     {
@@ -32,67 +32,49 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
                     unitOfWork.HataKayitlari.AddData(new HataKayit()
                     {
                         ErrorType = error.GetType().ToString(),
-                        AktifMi = true,
-                        DilID = 0,
-                        GuncellemeTarih = DateTime.Now,
                         HataKod = errorCode,
                         HataTarih = DateTime.Now,
                         HataZaman = DateTime.Now.TimeOfDay,
                         HelpLink = error.HelpLink,
                         InnerException = innerException,
-                        KayitTarih = DateTime.Now,
                         Message = error.Message,
                         SilindiMi = false,
-                        SirketID = 0,
                         Source = error.Source,
                         StackTrace = error.StackTrace,
                         TargetSite = error.TargetSite.ToString()
                     });
-                    Task<int> affect = unitOfWork.CompleteAsync();
-                    if (affect.Result > 0)
+                    int affect = unitOfWork.Complete();
+                    if (affect > 0)
                     {
                         if (error.StackTrace != string.Empty)
                         {
-                            int id = unitOfWork.HataKayitlari.EnBuyukHataKayitIDAsync().Result;
+                            int id = unitOfWork.HataKayitlari.EnBuyukHataKayitID();
                             List<StackTraceFrame> lst = new List<StackTraceFrame>();
                             StackTrace st = new StackTrace(error);
                             foreach (var item in st.GetFrames())
                             {
                                 lst.Add(new StackTraceFrame()
                                 {
-                                    AktifMi = true,
-                                    DilID = 0,
-                                    GuncellemeTarih = DateTime.Now,
                                     HataKayitID = id,
                                     KayitTarih = DateTime.Now,
                                     Method = item.GetMethod().ToString(),
-                                    SilindiMi = false,
-                                    SirketID = 0
+                                    SilindiMi = false
                                 });
                             }
                             unitOfWork.StackTraceFrames.AddDataRange(lst);
-                            await unitOfWork.CompleteAsync();
+                            unitOfWork.Complete();
                         }
-                        return await Task<string>.Factory.StartNew(() =>
-                        {
-                            return errorCode;
-                        });
+                        return errorCode;
                     }
                     else
                     {
-                        return await Task<string>.Factory.StartNew(() =>
-                        {
-                            return string.Empty;
-                        });
+                        return string.Empty;
                     }
                 }
             }
             catch
             {
-                return await Task<string>.Factory.StartNew(() =>
-                {
-                    return string.Empty;
-                });
+                return string.Empty;
             }
         }
     }

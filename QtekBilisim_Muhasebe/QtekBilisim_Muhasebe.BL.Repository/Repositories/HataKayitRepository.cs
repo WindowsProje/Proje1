@@ -22,9 +22,9 @@ namespace QtekBilisim_Muhasebe.BL.Repository.Repositories
             }
         }
 
-        public async Task<int> EnBuyukHataKayitIDAsync()
+        public int EnBuyukHataKayitID()
         {
-            return await HataKayitContext.HataKayit.MaxAsync(c => c.HataKayitID);
+            return HataKayitContext.HataKayit.Max(c => c.HataKayitID);
         }
     }
 }

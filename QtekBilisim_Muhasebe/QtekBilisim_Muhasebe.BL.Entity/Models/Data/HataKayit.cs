@@ -25,11 +25,6 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public Nullable<System.TimeSpan> HataZaman { get; set; }
         public string HataKod { get; set; }
         public string InnerException { get; set; }
-        public bool AktifMi { get; set; }
         public bool SilindiMi { get; set; }
-        public System.DateTime KayitTarih { get; set; }
-        public System.DateTime GuncellemeTarih { get; set; }
-        public int DilID { get; set; }
-        public int SirketID { get; set; }
     }
 }

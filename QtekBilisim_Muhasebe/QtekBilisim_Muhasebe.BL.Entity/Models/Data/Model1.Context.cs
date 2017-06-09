@@ -26,6 +26,7 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         }
     
         public virtual DbSet<AdetBirim> AdetBirim { get; set; }
+        public virtual DbSet<AlacakBakiye> AlacakBakiye { get; set; }
         public virtual DbSet<AlisFiyat> AlisFiyat { get; set; }
         public virtual DbSet<BankaBilgi> BankaBilgi { get; set; }
         public virtual DbSet<BankaHareket> BankaHareket { get; set; }
@@ -64,6 +65,5 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public virtual DbSet<Yetki> Yetki { get; set; }
         public virtual DbSet<YetkiAlan> YetkiAlan { get; set; }
         public virtual DbSet<YetkiDetay> YetkiDetay { get; set; }
-        public virtual DbSet<AlacakBakiye> AlacakBakiye { get; set; }
     }
 }

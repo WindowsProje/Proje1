@@ -10,5 +10,9 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Sehir
     {
         public int SehirID { get; set; }
         public string SehirAd { get; set; }
+        public override string ToString()
+        {
+            return this.SehirAd;
+        }
     }
 }

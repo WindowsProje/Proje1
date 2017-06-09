@@ -13,7 +13,7 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
 {
     public class IlceManager
     {
-        public async Task<bool> IlceEkleAsAsync(IlceTumDTO ilce)
+        public bool IlceEkle(IlceTumDTO ilce)
         {
             try
             {
@@ -28,9 +28,10 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
                         KayitTarih = ilce.KayitTarih,
                         SehirID = ilce.SehirID,
                         SilindiMi = ilce.SilindiMi,
-                        SirketID = ilce.SirketID
+                        SirketID = ilce.SirketID,
+                        KullaniciID = ilce.KullaniciID
                     });
-                    int affect = await unitOfWork.CompleteAsync();
+                    int affect = unitOfWork.Complete();
                     if (affect > 0)
                     {
                         return true;
@@ -43,42 +44,52 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
             }
             catch (DbEntityValidationException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new DbEntityValidationException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new DbEntityValidationException(code);
             }
             catch (ArgumentNullException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new ArgumentNullException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentNullException(code);
+            }
+            catch (ArgumentException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentException(code);
+            }
+            catch (InvalidOperationException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new InvalidOperationException(code);
             }
             catch (NullReferenceException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new NullReferenceException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new NullReferenceException(code);
             }
             catch (AggregateException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new AggregateException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new AggregateException(code);
             }
             catch (FormatException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new FormatException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new FormatException(code);
             }
             catch (Exception error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new Exception(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new Exception(code);
             }
         }
-        public async Task<bool> IlceGuncelleAsAsync(IlceTumDTO ilce)
+        public bool IlceGuncelle(IlceTumDTO ilce)
         {
             try
             {
                 using (var unitOfWork = new UnitOfWork(new QtekBilisim_MuhasebeContext()))
                 {
-                    var temp = unitOfWork.IlceKayitlari.FindDataAsync(ilce.IlceID).Result;
+                    var temp = unitOfWork.IlceKayitlari.FindData(ilce.IlceID);
                     if (temp != null)
                     {
                         temp.AktifMi = ilce.AktifMi;
@@ -89,9 +100,10 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
                         temp.SehirID = ilce.SehirID;
                         temp.SilindiMi = ilce.SilindiMi;
                         temp.SirketID = ilce.SirketID;
+                        temp.KullaniciID = ilce.KullaniciID;
                         if (unitOfWork.IlceKayitlari.IsModified(temp) == true)
                         {
-                            int affect = await unitOfWork.CompleteAsync();
+                            int affect = unitOfWork.Complete();
                             if (affect > 0)
                             {
                                 return true;
@@ -114,28 +126,38 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
             }
             catch (DbEntityValidationException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new DbEntityValidationException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new DbEntityValidationException(code);
             }
             catch (ArgumentNullException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new ArgumentNullException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentNullException(code);
+            }
+            catch (ArgumentException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentException(code);
+            }
+            catch (InvalidOperationException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new InvalidOperationException(code);
             }
             catch (NullReferenceException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new NullReferenceException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new NullReferenceException(code);
             }
             catch (AggregateException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new AggregateException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new AggregateException(code);
             }
             catch (FormatException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new FormatException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new FormatException(code);
             }
             catch (NullDataOnDatabaseCustomException)
             {
@@ -147,21 +169,21 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
             }
             catch (Exception error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new Exception(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new Exception(code);
             }
         }
-        public async Task<bool> IlceSilAsAsync(int id)
+        public bool IlceSil(int id)
         {
             try
             {
                 using (var unitOfWork = new UnitOfWork(new QtekBilisim_MuhasebeContext()))
                 {
-                    var temp = unitOfWork.IlceKayitlari.FindDataAsync(id).Result;
+                    var temp = unitOfWork.IlceKayitlari.FindData(id);
                     if (temp != null)
                     {
                         unitOfWork.IlceKayitlari.RemoveData(temp);
-                        int affect = await unitOfWork.CompleteAsync();
+                        int affect = unitOfWork.Complete();
                         if (affect > 0)
                         {
                             return true;
@@ -179,28 +201,38 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
             }
             catch (DbEntityValidationException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new DbEntityValidationException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new DbEntityValidationException(code);
             }
             catch (ArgumentNullException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new ArgumentNullException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentNullException(code);
+            }
+            catch (ArgumentException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentException(code);
+            }
+            catch (InvalidOperationException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new InvalidOperationException(code);
             }
             catch (NullReferenceException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new NullReferenceException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new NullReferenceException(code);
             }
             catch (AggregateException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new AggregateException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new AggregateException(code);
             }
             catch (FormatException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new FormatException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new FormatException(code);
             }
             catch (NullDataOnDatabaseCustomException)
             {
@@ -208,17 +240,17 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
             }
             catch (Exception error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new Exception(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new Exception(code);
             }
         }
-        public async Task<IlceTumDTO> IlceSatirGetirAsAsync(int id)
+        public IlceTumDTO IlceSatirGetir(int id)
         {
             try
             {
                 using (var unitOfWork = new UnitOfWork(new QtekBilisim_MuhasebeContext()))
                 {
-                    var temp = await unitOfWork.IlceKayitlari.FindDataAsync(id);
+                    var temp = unitOfWork.IlceKayitlari.FindData(id);
                     if (temp != null)
                     {
                         return new IlceTumDTO()
@@ -231,7 +263,8 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
                             SehirID = temp.SehirID,
                             SilindiMi = temp.SilindiMi,
                             SirketID = temp.SirketID,
-                            IlceID = temp.IlceID
+                            IlceID = temp.IlceID,
+                            KullaniciID = temp.KullaniciID
                         };
                     }
                     else
@@ -242,28 +275,38 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
             }
             catch (DbEntityValidationException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new DbEntityValidationException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new DbEntityValidationException(code);
             }
             catch (ArgumentNullException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new ArgumentNullException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentNullException(code);
+            }
+            catch (ArgumentException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentException(code);
+            }
+            catch (InvalidOperationException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new InvalidOperationException(code);
             }
             catch (NullReferenceException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new NullReferenceException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new NullReferenceException(code);
             }
             catch (AggregateException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new AggregateException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new AggregateException(code);
             }
             catch (FormatException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new FormatException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new FormatException(code);
             }
             catch (NullDataOnDatabaseCustomException)
             {
@@ -271,18 +314,18 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
             }
             catch (Exception error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new Exception(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new Exception(code);
             }
         }
-        public IlceListeDTO[] IlceListeAsAsync(IlceFiltreDTO ilce)
+        public IlceListeDTO[] IlceListe(IlceFiltreDTO ilce)
         {
             try
             {
                 using (var unitOfWork = new UnitOfWork(new QtekBilisim_MuhasebeContext()))
                 {
                     List<IlceListeDTO> lst = new List<IlceListeDTO>();
-                    foreach (var item in unitOfWork.IlceKayitlari.ListDataByExpressionAsync(b => b.AktifMi == ilce.AktifMi && b.DilID == ilce.DilID && b.SirketID == ilce.SirketID && b.SilindiMi == ilce.SilindiMi).Result)
+                    foreach (var item in unitOfWork.IlceKayitlari.ListDataByExpression(b => b.AktifMi == ilce.AktifMi && b.DilID == ilce.DilID && b.SirketID == ilce.SirketID && b.SilindiMi == ilce.SilindiMi && b.SehirID==ilce.SehirID))
                     {
                         lst.Add(new IlceListeDTO()
                         {
@@ -295,37 +338,43 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
             }
             catch (DbEntityValidationException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new DbEntityValidationException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new DbEntityValidationException(code);
             }
             catch (ArgumentNullException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new ArgumentNullException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentNullException(code);
+            }
+            catch (ArgumentException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new ArgumentException(code);
+            }
+            catch (InvalidOperationException error)
+            {
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new InvalidOperationException(code);
             }
             catch (NullReferenceException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new NullReferenceException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new NullReferenceException(code);
             }
             catch (AggregateException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new AggregateException(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new AggregateException(code);
             }
             catch (FormatException error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new FormatException(code.Result);
-            }
-            catch (NullDataOnDatabaseCustomException)
-            {
-                throw new NullDataOnDatabaseCustomException();
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new FormatException(code);
             }
             catch (Exception error)
             {
-                var code = HataKayitManager.HataKayitEkleAsync(error);
-                throw new Exception(code.Result);
+                var code = HataKayitManager.HataKayitEkle(error);
+                throw new Exception(code);
             }
         }
     }

@@ -17,11 +17,7 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public int StackTraceFrameID { get; set; }
         public int HataKayitID { get; set; }
         public string Method { get; set; }
-        public bool AktifMi { get; set; }
         public bool SilindiMi { get; set; }
         public System.DateTime KayitTarih { get; set; }
-        public System.DateTime GuncellemeTarih { get; set; }
-        public int DilID { get; set; }
-        public int SirketID { get; set; }
     }
 }

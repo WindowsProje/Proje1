@@ -18,12 +18,12 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public int AlanID { get; set; }
         public string AlanTipi { get; set; }
         public string DosyaTipi { get; set; }
+        public string DosyaAd { get; set; }
         public bool AktifMi { get; set; }
         public bool SilindiMi { get; set; }
         public System.DateTime KayitTarih { get; set; }
         public System.DateTime GuncellemeTarih { get; set; }
         public int DilID { get; set; }
         public int SirketID { get; set; }
-        public string DosyaAd { get; set; }
     }
 }

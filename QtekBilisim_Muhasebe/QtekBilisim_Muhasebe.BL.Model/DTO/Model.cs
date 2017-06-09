@@ -12,6 +12,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
         private int _dilID;
         private DateTime _guncellemeTarih;
         private DateTime _kayitTarihi;
+        private int _kullaniciID;
         private bool _silindiMi;
         private int _sirketID;
         
@@ -63,6 +64,20 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
                 _kayitTarihi = value;
             }
         }
+
+        public int KullaniciID
+        {
+            get
+            {
+                return _kullaniciID;
+            }
+
+            set
+            {
+                _kullaniciID = value;
+            }
+        }
+
         public bool SilindiMi
         {
             get

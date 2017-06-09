@@ -10,5 +10,9 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Ilce
     {
         public int IlceID { get; set; }
         public string IlceAd { get; set; }
+        public override string ToString()
+        {
+            return this.IlceAd;
+        }
     }
 }
