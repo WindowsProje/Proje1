@@ -25,9 +25,9 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.CariKayit
         public string OzelKod_2 { get; set; }
         public string OzelKod_3 { get; set; }
         public string Resim { get; set; }
-        public Nullable<int> Iskonto { get; set; }
-        public Nullable<int> KullanilacakStokFiyat { get; set; }
-        public Nullable<int> Vade { get; set; }
+        public int Iskonto { get; set; }
+        public int KullanilacakStokFiyat { get; set; }
+        public int Vade { get; set; }
         public string KaraListe { get; set; }
         public string Not { get; set; }
         public bool DovizHesabiVarMi { get; set; }

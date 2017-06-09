@@ -147,6 +147,7 @@
           <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
           <Property Name="DilID" Type="int" Nullable="false" />
           <Property Name="SirketID" Type="int" Nullable="false" />
+          <Property Name="KullaniciID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="CariKayit">
           <Key>
@@ -154,24 +155,25 @@
           </Key>
           <Property Name="CariID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IlceID" Type="int" Nullable="false" />
-          <Property Name="DovizBirimID" Type="int" />
-          <Property Name="CariKod" Type="nchar" MaxLength="5" Nullable="false" />
+          <Property Name="DovizBirimID" Type="int" Nullable="false" />
+          <Property Name="CariKod" Type="nvarchar" MaxLength="5" Nullable="false" />
           <Property Name="TicariUnvan" Type="nvarchar" MaxLength="75" />
-          <Property Name="Ad" Type="nvarchar" MaxLength="50" />
-          <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Soyad" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
           <Property Name="CepTelefon" Type="nvarchar" MaxLength="20" />
           <Property Name="Faks" Type="nvarchar" MaxLength="20" />
           <Property Name="VergiDaire" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="VergiNo" Type="nchar" MaxLength="10" Nullable="false" />
           <Property Name="TC" Type="nchar" MaxLength="11" Nullable="false" />
-          <Property Name="OzelKod_1" Type="nvarchar" MaxLength="30" />
-          <Property Name="OzelKod_2" Type="nvarchar" MaxLength="30" />
-          <Property Name="OzelKod_3" Type="nvarchar" MaxLength="30" />
+          <Property Name="OzelKod_1" Type="nvarchar" MaxLength="25" />
+          <Property Name="OzelKod_2" Type="nvarchar" MaxLength="25" />
+          <Property Name="OzelKod_3" Type="nvarchar" MaxLength="25" />
           <Property Name="Resim" Type="nvarchar" MaxLength="150" />
-          <Property Name="Iskonto" Type="int" />
-          <Property Name="KullanilacakStokFiyat" Type="int" />
-          <Property Name="Vade" Type="int" />
+          <Property Name="Iskonto" Type="int" Nullable="false" />
+          <Property Name="KullanilacakStokFiyat" Type="int" Nullable="false" />
+          <Property Name="Vade" Type="int" Nullable="false" />
           <Property Name="KaraListe" Type="nvarchar(max)" />
           <Property Name="Not" Type="nvarchar(max)" />
           <Property Name="DovizHesabiVarMi" Type="bit" Nullable="false" />
@@ -182,6 +184,7 @@
           <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
           <Property Name="DilID" Type="int" Nullable="false" />
           <Property Name="SirketID" Type="int" Nullable="false" />
+          <Property Name="KullaniciID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Cek">
           <Key>
@@ -294,6 +297,7 @@
           <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
           <Property Name="DilID" Type="int" Nullable="false" />
           <Property Name="SirketID" Type="int" Nullable="false" />
+          <Property Name="KullaniciID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="HareketSecim">
           <Key>
@@ -326,12 +330,7 @@
           <Property Name="HataZaman" Type="time" Precision="7" />
           <Property Name="HataKod" Type="nvarchar" MaxLength="32" />
           <Property Name="InnerException" Type="nvarchar(max)" />
-          <Property Name="AktifMi" Type="bit" Nullable="false" />
           <Property Name="SilindiMi" Type="bit" Nullable="false" />
-          <Property Name="KayitTarih" Type="datetime" Nullable="false" />
-          <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-          <Property Name="DilID" Type="int" Nullable="false" />
-          <Property Name="SirketID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Ilce">
           <Key>
@@ -345,6 +344,7 @@
           <Property Name="KayitTarih" Type="datetime" Nullable="false" />
           <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
           <Property Name="DilID" Type="int" Nullable="false" />
+          <Property Name="KullaniciID" Type="int" Nullable="false" />
           <Property Name="SirketID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="KasaHareket">
@@ -480,6 +480,7 @@
           <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
           <Property Name="DilID" Type="int" Nullable="false" />
           <Property Name="SirketID" Type="int" Nullable="false" />
+          <Property Name="KullaniciID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Senet">
           <Key>
@@ -539,12 +540,8 @@
           <Property Name="StackTraceFrameID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="HataKayitID" Type="int" Nullable="false" />
           <Property Name="Method" Type="nvarchar" MaxLength="250" Nullable="false" />
-          <Property Name="AktifMi" Type="bit" Nullable="false" />
           <Property Name="SilindiMi" Type="bit" Nullable="false" />
           <Property Name="KayitTarih" Type="datetime" Nullable="false" />
-          <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-          <Property Name="DilID" Type="int" Nullable="false" />
-          <Property Name="SirketID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="StokBakiyeUyari">
           <Key>
@@ -634,12 +631,13 @@
             <PropertyRef Name="UlkeID" />
           </Key>
           <Property Name="UlkeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="UlkeAd" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="UlkeAd" Type="nvarchar" MaxLength="75" Nullable="false" />
           <Property Name="AktifMi" Type="bit" Nullable="false" />
           <Property Name="SilindiMi" Type="bit" Nullable="false" />
           <Property Name="KayitTarih" Type="datetime" Nullable="false" />
           <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
           <Property Name="DilID" Type="int" Nullable="false" />
+          <Property Name="KullaniciID" Type="int" Nullable="false" />
           <Property Name="SirketID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Yetki">
@@ -733,6 +731,7 @@
       <Schema Namespace="QtekBilisim_MuhasebeDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="QtekBilisim_MuhasebeContext" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="AdetBirim" EntityType="QtekBilisim_MuhasebeDbModel.AdetBirim" />
+          <EntitySet Name="AlacakBakiye" EntityType="QtekBilisim_MuhasebeDbModel.AlacakBakiye" />
           <EntitySet Name="AlisFiyat" EntityType="QtekBilisim_MuhasebeDbModel.AlisFiyat" />
           <EntitySet Name="BankaBilgi" EntityType="QtekBilisim_MuhasebeDbModel.BankaBilgi" />
           <EntitySet Name="BankaHareket" EntityType="QtekBilisim_MuhasebeDbModel.BankaHareket" />
@@ -771,7 +770,6 @@
           <EntitySet Name="Yetki" EntityType="QtekBilisim_MuhasebeDbModel.Yetki" />
           <EntitySet Name="YetkiAlan" EntityType="QtekBilisim_MuhasebeDbModel.YetkiAlan" />
           <EntitySet Name="YetkiDetay" EntityType="QtekBilisim_MuhasebeDbModel.YetkiDetay" />
-          <EntitySet Name="AlacakBakiye" EntityType="QtekBilisim_MuhasebeDbModel.AlacakBakiye" />
         </EntityContainer>
         <EntityType Name="AdetBirim">
           <Key>
@@ -779,6 +777,21 @@
           </Key>
           <Property Name="AdetBirimID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Birim" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="AktifMi" Type="Boolean" Nullable="false" />
+          <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
+          <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DilID" Type="Int32" Nullable="false" />
+          <Property Name="SirketID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AlacakBakiye">
+          <Key>
+            <PropertyRef Name="AlacakBakiyeID" />
+          </Key>
+          <Property Name="AlacakBakiyeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CariID" Type="Int32" Nullable="false" />
+          <Property Name="Bakiye" Type="Decimal" Nullable="false" Precision="18" Scale="7" />
+          <Property Name="IslemTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
@@ -900,6 +913,7 @@
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
+          <Property Name="KullaniciID" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="CariKayit">
           <Key>
@@ -907,24 +921,25 @@
           </Key>
           <Property Name="CariID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IlceID" Type="Int32" Nullable="false" />
-          <Property Name="DovizBirimID" Type="Int32" />
-          <Property Name="CariKod" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Name="DovizBirimID" Type="Int32" Nullable="false" />
+          <Property Name="CariKod" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
           <Property Name="TicariUnvan" Type="String" MaxLength="75" FixedLength="false" Unicode="true" />
-          <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Soyad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Adres" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="CepTelefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="Faks" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="VergiDaire" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="VergiNo" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="TC" Type="String" Nullable="false" MaxLength="11" FixedLength="true" Unicode="true" />
-          <Property Name="OzelKod_1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="OzelKod_2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="OzelKod_3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="OzelKod_1" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="OzelKod_2" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="OzelKod_3" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
           <Property Name="Resim" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
-          <Property Name="Iskonto" Type="Int32" />
-          <Property Name="KullanilacakStokFiyat" Type="Int32" />
-          <Property Name="Vade" Type="Int32" />
+          <Property Name="Iskonto" Type="Int32" Nullable="false" />
+          <Property Name="KullanilacakStokFiyat" Type="Int32" Nullable="false" />
+          <Property Name="Vade" Type="Int32" Nullable="false" />
           <Property Name="KaraListe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Not" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="DovizHesabiVarMi" Type="Boolean" Nullable="false" />
@@ -935,6 +950,7 @@
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
+          <Property Name="KullaniciID" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Cek">
           <Key>
@@ -988,13 +1004,13 @@
           <Property Name="AlanID" Type="Int32" Nullable="false" />
           <Property Name="AlanTipi" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="DosyaTipi" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DosyaAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
-          <Property Name="DosyaAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="DovizBirim">
           <Key>
@@ -1047,6 +1063,7 @@
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
+          <Property Name="KullaniciID" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="HareketSecim">
           <Key>
@@ -1079,12 +1096,7 @@
           <Property Name="HataZaman" Type="Time" Precision="7" />
           <Property Name="HataKod" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
           <Property Name="InnerException" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
-          <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="DilID" Type="Int32" Nullable="false" />
-          <Property Name="SirketID" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Ilce">
           <Key>
@@ -1092,13 +1104,14 @@
           </Key>
           <Property Name="IlceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SehirID" Type="Int32" Nullable="false" />
+          <Property Name="IlceAd" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
           <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
+          <Property Name="KullaniciID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
-          <Property Name="IlceAd" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="KasaHareket">
           <Key>
@@ -1195,13 +1208,13 @@
             <PropertyRef Name="RolID" />
           </Key>
           <Property Name="RolID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RolAd" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
-          <Property Name="RolAd" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="SatisFiyat">
           <Key>
@@ -1226,13 +1239,14 @@
           </Key>
           <Property Name="SehirID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="UlkeID" Type="Int32" Nullable="false" />
+          <Property Name="SehirAd" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
           <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
-          <Property Name="SehirAd" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
+          <Property Name="KullaniciID" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Senet">
           <Key>
@@ -1278,12 +1292,12 @@
             <PropertyRef Name="SirketTurID" />
           </Key>
           <Property Name="SirketTurID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SirketTurAd" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="SirketTurAd" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="StackTraceFrame">
           <Key>
@@ -1292,12 +1306,8 @@
           <Property Name="StackTraceFrameID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="HataKayitID" Type="Int32" Nullable="false" />
           <Property Name="Method" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
-          <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="DilID" Type="Int32" Nullable="false" />
-          <Property Name="SirketID" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="StokBakiyeUyari">
           <Key>
@@ -1387,26 +1397,27 @@
             <PropertyRef Name="UlkeID" />
           </Key>
           <Property Name="UlkeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UlkeAd" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="true" />
           <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
+          <Property Name="KullaniciID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
-          <Property Name="UlkeAd" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Yetki">
           <Key>
             <PropertyRef Name="YetkiID" />
           </Key>
           <Property Name="YetkiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YetkiAd" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="AktifMi" Type="Boolean" Nullable="false" />
           <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
           <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
-          <Property Name="YetkiAd" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="YetkiAlan">
           <Key>
@@ -1438,21 +1449,6 @@
           <Property Name="DilID" Type="Int32" Nullable="false" />
           <Property Name="SirketID" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityType Name="AlacakBakiye">
-          <Key>
-            <PropertyRef Name="AlacakBakiyeID" />
-          </Key>
-          <Property Name="AlacakBakiyeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="CariID" Type="Int32" Nullable="false" />
-          <Property Name="Bakiye" Type="Decimal" Nullable="false" Precision="18" Scale="7" />
-          <Property Name="IslemTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="AktifMi" Type="Boolean" Nullable="false" />
-          <Property Name="SilindiMi" Type="Boolean" Nullable="false" />
-          <Property Name="KayitTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="GuncellemeTarih" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="DilID" Type="Int32" Nullable="false" />
-          <Property Name="SirketID" Type="Int32" Nullable="false" />
-        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1470,6 +1466,22 @@
                 <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
                 <ScalarProperty Name="Birim" ColumnName="Birim" />
                 <ScalarProperty Name="AdetBirimID" ColumnName="AdetBirimID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AlacakBakiye">
+            <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.AlacakBakiye">
+              <MappingFragment StoreEntitySet="AlacakBakiye">
+                <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+                <ScalarProperty Name="DilID" ColumnName="DilID" />
+                <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+                <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+                <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+                <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+                <ScalarProperty Name="IslemTarih" ColumnName="IslemTarih" />
+                <ScalarProperty Name="Bakiye" ColumnName="Bakiye" />
+                <ScalarProperty Name="CariID" ColumnName="CariID" />
+                <ScalarProperty Name="AlacakBakiyeID" ColumnName="AlacakBakiyeID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1573,6 +1585,7 @@
           <EntitySetMapping Name="CariHareket">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.CariHareket">
               <MappingFragment StoreEntitySet="CariHareket">
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
@@ -1597,6 +1610,7 @@
           <EntitySetMapping Name="CariKayit">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.CariKayit">
               <MappingFragment StoreEntitySet="CariKayit">
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
@@ -1619,6 +1633,7 @@
                 <ScalarProperty Name="VergiDaire" ColumnName="VergiDaire" />
                 <ScalarProperty Name="Faks" ColumnName="Faks" />
                 <ScalarProperty Name="CepTelefon" ColumnName="CepTelefon" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
                 <ScalarProperty Name="Adres" ColumnName="Adres" />
                 <ScalarProperty Name="Soyad" ColumnName="Soyad" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
@@ -1680,13 +1695,13 @@
           <EntitySetMapping Name="Dosya">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Dosya">
               <MappingFragment StoreEntitySet="Dosya">
-                <ScalarProperty Name="DosyaAd" ColumnName="DosyaAd" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
                 <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
                 <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+                <ScalarProperty Name="DosyaAd" ColumnName="DosyaAd" />
                 <ScalarProperty Name="DosyaTipi" ColumnName="DosyaTipi" />
                 <ScalarProperty Name="AlanTipi" ColumnName="AlanTipi" />
                 <ScalarProperty Name="AlanID" ColumnName="AlanID" />
@@ -1735,6 +1750,7 @@
           <EntitySetMapping Name="Grup">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Grup">
               <MappingFragment StoreEntitySet="Grup">
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
@@ -1769,12 +1785,7 @@
           <EntitySetMapping Name="HataKayit">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.HataKayit">
               <MappingFragment StoreEntitySet="HataKayit">
-                <ScalarProperty Name="SirketID" ColumnName="SirketID" />
-                <ScalarProperty Name="DilID" ColumnName="DilID" />
-                <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
-                <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
-                <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
                 <ScalarProperty Name="InnerException" ColumnName="InnerException" />
                 <ScalarProperty Name="HataKod" ColumnName="HataKod" />
                 <ScalarProperty Name="HataZaman" ColumnName="HataZaman" />
@@ -1792,13 +1803,14 @@
           <EntitySetMapping Name="Ilce">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Ilce">
               <MappingFragment StoreEntitySet="Ilce">
-                <ScalarProperty Name="IlceAd" ColumnName="IlceAd" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
                 <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
                 <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+                <ScalarProperty Name="IlceAd" ColumnName="IlceAd" />
                 <ScalarProperty Name="SehirID" ColumnName="SehirID" />
                 <ScalarProperty Name="IlceID" ColumnName="IlceID" />
               </MappingFragment>
@@ -1903,13 +1915,13 @@
           <EntitySetMapping Name="Rol">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Rol">
               <MappingFragment StoreEntitySet="Rol">
-                <ScalarProperty Name="RolAd" ColumnName="RolAd" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
                 <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
                 <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+                <ScalarProperty Name="RolAd" ColumnName="RolAd" />
                 <ScalarProperty Name="RolID" ColumnName="RolID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -1935,13 +1947,14 @@
           <EntitySetMapping Name="Sehir">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Sehir">
               <MappingFragment StoreEntitySet="Sehir">
-                <ScalarProperty Name="SehirAd" ColumnName="SehirAd" />
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
                 <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
                 <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+                <ScalarProperty Name="SehirAd" ColumnName="SehirAd" />
                 <ScalarProperty Name="UlkeID" ColumnName="UlkeID" />
                 <ScalarProperty Name="SehirID" ColumnName="SehirID" />
               </MappingFragment>
@@ -1991,12 +2004,12 @@
           <EntitySetMapping Name="SirketTur">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.SirketTur">
               <MappingFragment StoreEntitySet="SirketTur">
-                <ScalarProperty Name="SirketTurAd" ColumnName="SirketTurAd" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
                 <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+                <ScalarProperty Name="SirketTurAd" ColumnName="SirketTurAd" />
                 <ScalarProperty Name="SirketTurID" ColumnName="SirketTurID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -2004,12 +2017,8 @@
           <EntitySetMapping Name="StackTraceFrame">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.StackTraceFrame">
               <MappingFragment StoreEntitySet="StackTraceFrame">
-                <ScalarProperty Name="SirketID" ColumnName="SirketID" />
-                <ScalarProperty Name="DilID" ColumnName="DilID" />
-                <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
                 <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
-                <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
                 <ScalarProperty Name="Method" ColumnName="Method" />
                 <ScalarProperty Name="HataKayitID" ColumnName="HataKayitID" />
                 <ScalarProperty Name="StackTraceFrameID" ColumnName="StackTraceFrameID" />
@@ -2106,13 +2115,14 @@
           <EntitySetMapping Name="Ulke">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Ulke">
               <MappingFragment StoreEntitySet="Ulke">
-                <ScalarProperty Name="UlkeAd" ColumnName="UlkeAd" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
                 <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
                 <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+                <ScalarProperty Name="UlkeAd" ColumnName="UlkeAd" />
                 <ScalarProperty Name="UlkeID" ColumnName="UlkeID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -2120,13 +2130,13 @@
           <EntitySetMapping Name="Yetki">
             <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Yetki">
               <MappingFragment StoreEntitySet="Yetki">
-                <ScalarProperty Name="YetkiAd" ColumnName="YetkiAd" />
                 <ScalarProperty Name="SirketID" ColumnName="SirketID" />
                 <ScalarProperty Name="DilID" ColumnName="DilID" />
                 <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
                 <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
                 <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
                 <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+                <ScalarProperty Name="YetkiAd" ColumnName="YetkiAd" />
                 <ScalarProperty Name="YetkiID" ColumnName="YetkiID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -2160,22 +2170,6 @@
                 <ScalarProperty Name="YetkiID" ColumnName="YetkiID" />
                 <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
                 <ScalarProperty Name="YetkiDetayID" ColumnName="YetkiDetayID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="AlacakBakiye">
-            <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.AlacakBakiye">
-              <MappingFragment StoreEntitySet="AlacakBakiye">
-                <ScalarProperty Name="SirketID" ColumnName="SirketID" />
-                <ScalarProperty Name="DilID" ColumnName="DilID" />
-                <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
-                <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
-                <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
-                <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
-                <ScalarProperty Name="IslemTarih" ColumnName="IslemTarih" />
-                <ScalarProperty Name="Bakiye" ColumnName="Bakiye" />
-                <ScalarProperty Name="CariID" ColumnName="CariID" />
-                <ScalarProperty Name="AlacakBakiyeID" ColumnName="AlacakBakiyeID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

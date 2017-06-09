@@ -15,11 +15,11 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
     public partial class SirketTur
     {
         public int SirketTurID { get; set; }
+        public string SirketTurAd { get; set; }
         public bool AktifMi { get; set; }
         public bool SilindiMi { get; set; }
         public System.DateTime KayitTarih { get; set; }
         public int DilID { get; set; }
         public System.DateTime GuncellemeTarih { get; set; }
-        public string SirketTurAd { get; set; }
     }
 }

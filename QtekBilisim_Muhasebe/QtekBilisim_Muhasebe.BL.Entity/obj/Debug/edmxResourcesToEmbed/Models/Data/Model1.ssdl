@@ -142,6 +142,7 @@
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
     <Property Name="DilID" Type="int" Nullable="false" />
     <Property Name="SirketID" Type="int" Nullable="false" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="CariKayit">
     <Key>
@@ -149,24 +150,25 @@
     </Key>
     <Property Name="CariID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IlceID" Type="int" Nullable="false" />
-    <Property Name="DovizBirimID" Type="int" />
-    <Property Name="CariKod" Type="nchar" MaxLength="5" Nullable="false" />
+    <Property Name="DovizBirimID" Type="int" Nullable="false" />
+    <Property Name="CariKod" Type="nvarchar" MaxLength="5" Nullable="false" />
     <Property Name="TicariUnvan" Type="nvarchar" MaxLength="75" />
-    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
-    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
     <Property Name="CepTelefon" Type="nvarchar" MaxLength="20" />
     <Property Name="Faks" Type="nvarchar" MaxLength="20" />
     <Property Name="VergiDaire" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="VergiNo" Type="nchar" MaxLength="10" Nullable="false" />
     <Property Name="TC" Type="nchar" MaxLength="11" Nullable="false" />
-    <Property Name="OzelKod_1" Type="nvarchar" MaxLength="30" />
-    <Property Name="OzelKod_2" Type="nvarchar" MaxLength="30" />
-    <Property Name="OzelKod_3" Type="nvarchar" MaxLength="30" />
+    <Property Name="OzelKod_1" Type="nvarchar" MaxLength="25" />
+    <Property Name="OzelKod_2" Type="nvarchar" MaxLength="25" />
+    <Property Name="OzelKod_3" Type="nvarchar" MaxLength="25" />
     <Property Name="Resim" Type="nvarchar" MaxLength="150" />
-    <Property Name="Iskonto" Type="int" />
-    <Property Name="KullanilacakStokFiyat" Type="int" />
-    <Property Name="Vade" Type="int" />
+    <Property Name="Iskonto" Type="int" Nullable="false" />
+    <Property Name="KullanilacakStokFiyat" Type="int" Nullable="false" />
+    <Property Name="Vade" Type="int" Nullable="false" />
     <Property Name="KaraListe" Type="nvarchar(max)" />
     <Property Name="Not" Type="nvarchar(max)" />
     <Property Name="DovizHesabiVarMi" Type="bit" Nullable="false" />
@@ -177,6 +179,7 @@
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
     <Property Name="DilID" Type="int" Nullable="false" />
     <Property Name="SirketID" Type="int" Nullable="false" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Cek">
     <Key>
@@ -289,6 +292,7 @@
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
     <Property Name="DilID" Type="int" Nullable="false" />
     <Property Name="SirketID" Type="int" Nullable="false" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="HareketSecim">
     <Key>
@@ -321,12 +325,7 @@
     <Property Name="HataZaman" Type="time" Precision="7" />
     <Property Name="HataKod" Type="nvarchar" MaxLength="32" />
     <Property Name="InnerException" Type="nvarchar(max)" />
-    <Property Name="AktifMi" Type="bit" Nullable="false" />
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
-    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
-    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-    <Property Name="DilID" Type="int" Nullable="false" />
-    <Property Name="SirketID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Ilce">
     <Key>
@@ -340,6 +339,7 @@
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
     <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
     <Property Name="SirketID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="KasaHareket">
@@ -475,6 +475,7 @@
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
     <Property Name="DilID" Type="int" Nullable="false" />
     <Property Name="SirketID" Type="int" Nullable="false" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Senet">
     <Key>
@@ -534,12 +535,8 @@
     <Property Name="StackTraceFrameID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="HataKayitID" Type="int" Nullable="false" />
     <Property Name="Method" Type="nvarchar" MaxLength="250" Nullable="false" />
-    <Property Name="AktifMi" Type="bit" Nullable="false" />
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
-    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-    <Property Name="DilID" Type="int" Nullable="false" />
-    <Property Name="SirketID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="StokBakiyeUyari">
     <Key>
@@ -629,12 +626,13 @@
       <PropertyRef Name="UlkeID" />
     </Key>
     <Property Name="UlkeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UlkeAd" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="UlkeAd" Type="nvarchar" MaxLength="75" Nullable="false" />
     <Property Name="AktifMi" Type="bit" Nullable="false" />
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
     <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
     <Property Name="SirketID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Yetki">

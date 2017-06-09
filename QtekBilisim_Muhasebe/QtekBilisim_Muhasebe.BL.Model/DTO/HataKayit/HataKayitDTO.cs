@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QtekBilisim_Muhasebe.BL.Model.DTO.HataKayit
 {
-    public class HataKayitDTO:Model
+    public class HataKayitDTO
     {
         public int HataKayitID { get; set; }
         public string ErrorType { get; set; }
@@ -19,5 +19,6 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.HataKayit
         public Nullable<DateTime> HataTarih { get; set; }
         public Nullable<DateTime> HataZaman { get; set; }
         public string HataKod { get; set; }
+        public bool SilindiMi { get; set; }
     }
 }

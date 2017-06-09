@@ -16,12 +16,13 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
     {
         public int CariID { get; set; }
         public int IlceID { get; set; }
-        public Nullable<int> DovizBirimID { get; set; }
+        public int DovizBirimID { get; set; }
         public string CariKod { get; set; }
         public string TicariUnvan { get; set; }
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string Adres { get; set; }
+        public string Telefon { get; set; }
         public string CepTelefon { get; set; }
         public string Faks { get; set; }
         public string VergiDaire { get; set; }
@@ -31,9 +32,9 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public string OzelKod_2 { get; set; }
         public string OzelKod_3 { get; set; }
         public string Resim { get; set; }
-        public Nullable<int> Iskonto { get; set; }
-        public Nullable<int> KullanilacakStokFiyat { get; set; }
-        public Nullable<int> Vade { get; set; }
+        public int Iskonto { get; set; }
+        public int KullanilacakStokFiyat { get; set; }
+        public int Vade { get; set; }
         public string KaraListe { get; set; }
         public string Not { get; set; }
         public bool DovizHesabiVarMi { get; set; }
@@ -44,5 +45,6 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public System.DateTime GuncellemeTarih { get; set; }
         public int DilID { get; set; }
         public int SirketID { get; set; }
+        public int KullaniciID { get; set; }
     }
 }

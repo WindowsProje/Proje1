@@ -12,5 +12,6 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
         bool AktifMi { get; set; }
         bool SilindiMi { get; set; }
         int SirketID { get; set; }
+        int KullaniciID { get; set; }
     }
 }

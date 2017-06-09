@@ -8,5 +8,6 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Sehir
 {
     public class SehirFiltreDTO:Filtre
     {
+        public int UlkeID { get; set; }
     }
 }
