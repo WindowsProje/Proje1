@@ -1,0 +1,180 @@
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Properties.Resources.resources
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csproj.GenerateResource.Cache
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.xml
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.pdb
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.resources
+C:\Users\hp\Documents\Visual Studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.en-US.resources
+C:\Users\hp\Documents\Visual Studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form1.resources
+C:\Users\hp\Documents\Visual Studio 2015\Projects\Yeni klasör\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+C:\Users\hp\Documents\Visual Studio 2015\Projects\Yeni klasör\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\Users\hp\Documents\Visual Studio 2015\Projects\Yeni klasör\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.xml
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.xml
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csprojResolveAssemblyReference.cache
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form1.resources
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.resources
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Properties.Resources.resources
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.en-US.resources
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csproj.GenerateResource.Cache
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form2.resources
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form3.resources
+C:\My Files\Qtek Bilişim\Projects\Muhasebe\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+C:\My Files\Qtek Bilişim\Projects\Muhasebe\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\My Files\Qtek Bilişim\Projects\Muhasebe\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\My Files\Qtek Bilişim\Projects\Muhasebe\Project\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+C:\My Files\Qtek Bilişim\Projects\Muhasebe\Project\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\My Files\Qtek Bilişim\Projects\Muhasebe\Project\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\Bunifu_UI_v1.4.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.pdb
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.xml
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csprojResolveAssemblyReference.cache
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form1.resources
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmAnaEkran.resources
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariHarektRaporu.resources
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayit.resources
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayitIslemlerMenu.resources
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.resources
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Properties.Resources.resources
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.en-US.resources
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csproj.GenerateResource.Cache
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\Bunifu_UI_v1.4.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.xml
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csprojResolveAssemblyReference.cache
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form1.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmAnaEkran.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariHarektRaporu.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayit.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayitIslemlerMenu.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Properties.Resources.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.en-US.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csproj.GenerateResource.Cache
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.xml
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form1.resources
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmAnaEkran.resources
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariHarektRaporu.resources
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayit.resources
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayitIslemlerMenu.resources
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.resources
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Properties.Resources.resources
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.en-US.resources
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe.config
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.exe
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.PL.Windows.pdb
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\Bunifu_UI_v1.4.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.dll
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.pdb
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.xml
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csprojResolveAssemblyReference.cache
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form1.resources
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmAnaEkran.resources
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariHarektRaporu.resources
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayit.resources
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayitIslemlerMenu.resources
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.resources
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Properties.Resources.resources
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.en-US.resources
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csproj.GenerateResource.Cache
+C:\Users\RamazaN\Downloads\Proje1-master\Proje1-master\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\en-US\QtekBilisim_Muhasebe.PL.Windows.resources.dll

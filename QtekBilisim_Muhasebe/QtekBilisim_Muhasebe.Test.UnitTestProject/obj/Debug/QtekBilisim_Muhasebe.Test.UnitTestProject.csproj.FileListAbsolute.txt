@@ -1,0 +1,40 @@
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\obj\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\obj\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\EntityFramework.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\EntityFramework.xml
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\obj\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.csprojResolveAssemblyReference.cache
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.dll.config
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.dll.config
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\EntityFramework.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\QtekBilisim_Muhasebe.DAL.Service.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\EntityFramework.xml
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\obj\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\obj\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.Test.UnitTestProject\obj\Debug\QtekBilisim_Muhasebe.Test.UnitTestProject.pdb

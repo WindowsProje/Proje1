@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QtekBilisim_MuhasebeDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdetBirim">
+    <Key>
+      <PropertyRef Name="AdetBirimID" />
+    </Key>
+    <Property Name="AdetBirimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Birim" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlacakBakiye">
+    <Key>
+      <PropertyRef Name="AlacakBakiyeID" />
+    </Key>
+    <Property Name="AlacakBakiyeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CariID" Type="int" Nullable="false" />
+    <Property Name="Bakiye" Type="decimal" Precision="18" Scale="7" Nullable="false" />
+    <Property Name="IslemTarih" Type="datetime" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlisFiyat">
+    <Key>
+      <PropertyRef Name="AlisFiyatID" />
+    </Key>
+    <Property Name="AlisFiyatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StokID" Type="int" Nullable="false" />
+    <Property Name="FiyatTanim" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FiyatNo" Type="int" Nullable="false" />
+    <Property Name="Fiyat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="FiyatAciklama" Type="nvarchar(max)" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BankaBilgi">
+    <Key>
+      <PropertyRef Name="BankaBilgiID" />
+    </Key>
+    <Property Name="BankaBilgiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankaAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
+    <Property Name="Adres" Type="nvarchar(max)" />
+    <Property Name="Yetkili" Type="nvarchar" MaxLength="150" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BankaHareket">
+    <Key>
+      <PropertyRef Name="BankaHareketID" />
+    </Key>
+    <Property Name="BankaHareketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankaID" Type="int" Nullable="false" />
+    <Property Name="OzelKod" Type="nvarchar" MaxLength="20" />
+    <Property Name="EvrakNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="IslemTur" Type="nvarchar" MaxLength="20" />
+    <Property Name="Vade" Type="int" Nullable="false" />
+    <Property Name="IslemTarih" Type="date" Nullable="false" />
+    <Property Name="IslemSaat" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Aciklama" Type="nvarchar(max)" />
+    <Property Name="TutarBorc" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TutarAlacak" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BankaKayit">
+    <Key>
+      <PropertyRef Name="BankaID" />
+    </Key>
+    <Property Name="BankaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankaBilgiID" Type="int" Nullable="false" />
+    <Property Name="KrediKartID" Type="int" Nullable="false" />
+    <Property Name="PosID" Type="int" Nullable="false" />
+    <Property Name="CekID" Type="int" Nullable="false" />
+    <Property Name="SenetID" Type="int" Nullable="false" />
+    <Property Name="BankaAd" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="HesapTur" Type="nvarchar" MaxLength="50" />
+    <Property Name="SubeKod" Type="nvarchar" MaxLength="20" />
+    <Property Name="HesapNumara" Type="nvarchar" MaxLength="30" />
+    <Property Name="IBAN" Type="nvarchar" MaxLength="30" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BorcBakiye">
+    <Key>
+      <PropertyRef Name="BorcBakiyeID" />
+    </Key>
+    <Property Name="BorcBakiyeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CariID" Type="int" Nullable="false" />
+    <Property Name="Bakiye" Type="decimal" Precision="18" Scale="7" Nullable="false" />
+    <Property Name="IslemTarih" Type="datetime" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CariHareket">
+    <Key>
+      <PropertyRef Name="CariHareketID" />
+    </Key>
+    <Property Name="CariHareketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CariID" Type="int" Nullable="false" />
+    <Property Name="OzelKod" Type="nvarchar" MaxLength="50" />
+    <Property Name="EvrakNumara" Type="nvarchar" MaxLength="50" />
+    <Property Name="IslemTur" Type="nvarchar" MaxLength="50" />
+    <Property Name="VadeTarih" Type="datetime" />
+    <Property Name="IslemTarih" Type="date" />
+    <Property Name="IslemSaat" Type="time" Precision="7" />
+    <Property Name="BorcTutar" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AlacakTutar" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Aciklama" Type="nvarchar(max)" />
+    <Property Name="MakbuzNumara" Type="nvarchar" MaxLength="50" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CariKayit">
+    <Key>
+      <PropertyRef Name="CariID" />
+    </Key>
+    <Property Name="CariID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IlceID" Type="int" Nullable="false" />
+    <Property Name="DovizBirimID" Type="int" />
+    <Property Name="CariKod" Type="nchar" MaxLength="5" Nullable="false" />
+    <Property Name="TicariUnvan" Type="nvarchar" MaxLength="75" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CepTelefon" Type="nvarchar" MaxLength="20" />
+    <Property Name="Faks" Type="nvarchar" MaxLength="20" />
+    <Property Name="VergiDaire" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VergiNo" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="TC" Type="nchar" MaxLength="11" Nullable="false" />
+    <Property Name="OzelKod_1" Type="nvarchar" MaxLength="30" />
+    <Property Name="OzelKod_2" Type="nvarchar" MaxLength="30" />
+    <Property Name="OzelKod_3" Type="nvarchar" MaxLength="30" />
+    <Property Name="Resim" Type="nvarchar" MaxLength="150" />
+    <Property Name="Iskonto" Type="int" />
+    <Property Name="KullanilacakStokFiyat" Type="int" />
+    <Property Name="Vade" Type="int" />
+    <Property Name="KaraListe" Type="nvarchar(max)" />
+    <Property Name="Not" Type="nvarchar(max)" />
+    <Property Name="DovizHesabiVarMi" Type="bit" Nullable="false" />
+    <Property Name="Yetkili" Type="nvarchar" MaxLength="100" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cek">
+    <Key>
+      <PropertyRef Name="CekID" />
+    </Key>
+    <Property Name="CekID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepoKayit">
+    <Key>
+      <PropertyRef Name="DepoID" />
+    </Key>
+    <Property Name="DepoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StokID" Type="int" Nullable="false" />
+    <Property Name="DepoKod" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DepoAd" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="Yetkili" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dil">
+    <Key>
+      <PropertyRef Name="DilID" />
+    </Key>
+    <Property Name="DilID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DilAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DilSembol" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="DilKod" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="ParaBirim" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ParaBirimSembol" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dosya">
+    <Key>
+      <PropertyRef Name="DosyaID" />
+    </Key>
+    <Property Name="DosyaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlanID" Type="int" Nullable="false" />
+    <Property Name="AlanTipi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DosyaTipi" Type="nvarchar" MaxLength="20" />
+    <Property Name="DosyaAd" Type="nvarchar" MaxLength="150" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DovizBirim">
+    <Key>
+      <PropertyRef Name="DovizBirimID" />
+    </Key>
+    <Property Name="DovizBirimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Birim" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Simge" Type="nchar" MaxLength="2" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FaturaBilgi">
+    <Key>
+      <PropertyRef Name="FaturaID" />
+    </Key>
+    <Property Name="FaturaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FaturaNumara" Type="nvarchar" MaxLength="50" />
+    <Property Name="FaturaTarih" Type="date" />
+    <Property Name="FaturaSaat" Type="time" Precision="7" />
+    <Property Name="CariBilgiler" Type="nvarchar" MaxLength="50" />
+    <Property Name="Grup" Type="nvarchar" MaxLength="50" />
+    <Property Name="OzelKod" Type="nvarchar" MaxLength="50" />
+    <Property Name="StokBilgiler" Type="nvarchar" MaxLength="50" />
+    <Property Name="KDV" Type="nvarchar" MaxLength="50" />
+    <Property Name="Iskonto" Type="int" />
+    <Property Name="EkBilgiler" Type="nvarchar" MaxLength="50" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grup">
+    <Key>
+      <PropertyRef Name="GrupID" />
+    </Key>
+    <Property Name="GrupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlanID" Type="int" Nullable="false" />
+    <Property Name="UstGrupID" Type="int" Nullable="false" />
+    <Property Name="AlanTipi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="GrupAd" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HareketSecim">
+    <Key>
+      <PropertyRef Name="HareketSecimID" />
+    </Key>
+    <Property Name="HareketSecimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Iade" Type="bit" Nullable="false" />
+    <Property Name="Transfer" Type="bit" Nullable="false" />
+    <Property Name="Duzeltme" Type="bit" Nullable="false" />
+    <Property Name="DevirHareket" Type="bit" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HataKayit">
+    <Key>
+      <PropertyRef Name="HataKayitID" />
+    </Key>
+    <Property Name="HataKayitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ErrorType" Type="nvarchar" MaxLength="250" />
+    <Property Name="HelpLink" Type="nvarchar(max)" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="Source" Type="nvarchar(max)" />
+    <Property Name="TargetSite" Type="nvarchar(max)" />
+    <Property Name="StackTrace" Type="nvarchar(max)" />
+    <Property Name="HataTarih" Type="date" />
+    <Property Name="HataZaman" Type="time" Precision="7" />
+    <Property Name="HataKod" Type="nvarchar" MaxLength="32" />
+    <Property Name="InnerException" Type="nvarchar(max)" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ilce">
+    <Key>
+      <PropertyRef Name="IlceID" />
+    </Key>
+    <Property Name="IlceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SehirID" Type="int" Nullable="false" />
+    <Property Name="IlceAd" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KasaHareket">
+    <Key>
+      <PropertyRef Name="KasaHareketID" />
+    </Key>
+    <Property Name="KasaHareketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CariID" Type="int" Nullable="false" />
+    <Property Name="HareketKod" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="EvrakNumara" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IslemTur" Type="nvarchar" MaxLength="10" />
+    <Property Name="IslemAciklama" Type="nvarchar(max)" />
+    <Property Name="IslemTarih" Type="datetime" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KasaKayit">
+    <Key>
+      <PropertyRef Name="KasaID" />
+    </Key>
+    <Property Name="KasaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KasaAd" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="KasaKod" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Yetkili" Type="nvarchar" MaxLength="100" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KdvOran">
+    <Key>
+      <PropertyRef Name="KdvID" />
+    </Key>
+    <Property Name="KdvID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KDV" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KrediKart">
+    <Key>
+      <PropertyRef Name="KrediKartID" />
+    </Key>
+    <Property Name="KrediKartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RolID" Type="int" Nullable="false" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KullaniciKod" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Bolum" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KullaniciAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KullaniciSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VarsayilanSirketID" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pos">
+    <Key>
+      <PropertyRef Name="PosID" />
+    </Key>
+    <Property Name="PosID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="RolID" />
+    </Key>
+    <Property Name="RolID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RolAd" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SatisFiyat">
+    <Key>
+      <PropertyRef Name="SatisFiyatID" />
+    </Key>
+    <Property Name="SatisFiyatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StokID" Type="int" Nullable="false" />
+    <Property Name="FiyatTanim" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FiyatNo" Type="int" Nullable="false" />
+    <Property Name="Fiyat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="FiyatAciklama" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sehir">
+    <Key>
+      <PropertyRef Name="SehirID" />
+    </Key>
+    <Property Name="SehirID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UlkeID" Type="int" Nullable="false" />
+    <Property Name="SehirAd" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Senet">
+    <Key>
+      <PropertyRef Name="SenetID" />
+    </Key>
+    <Property Name="SenetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SirketKayit">
+    <Key>
+      <PropertyRef Name="SirketID" />
+    </Key>
+    <Property Name="SirketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SirketTurID" Type="int" Nullable="false" />
+    <Property Name="TicariUnvan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Yetkili" Type="nvarchar" MaxLength="50" />
+    <Property Name="VergiDaire" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VergiNumara" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="VergiDaireKod" Type="nvarchar" MaxLength="10" />
+    <Property Name="TicariSicilNumara" Type="nvarchar" MaxLength="10" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IlceID" Type="int" Nullable="false" />
+    <Property Name="CalismaYil" Type="int" Nullable="false" />
+    <Property Name="KurulusTarih" Type="datetime" Nullable="false" />
+    <Property Name="Telefon_1" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Telefon_2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Faks" Type="nvarchar" MaxLength="20" />
+    <Property Name="Muhasebeci" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="Not" Type="nvarchar(max)" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SirketTur">
+    <Key>
+      <PropertyRef Name="SirketTurID" />
+    </Key>
+    <Property Name="SirketTurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SirketTurAd" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StackTraceFrame">
+    <Key>
+      <PropertyRef Name="StackTraceFrameID" />
+    </Key>
+    <Property Name="StackTraceFrameID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HataKayitID" Type="int" Nullable="false" />
+    <Property Name="Method" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StokBakiyeUyari">
+    <Key>
+      <PropertyRef Name="StokBakiyeUyariID" />
+    </Key>
+    <Property Name="StokBakiyeUyariID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UyariTipi" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StokHareket">
+    <Key>
+      <PropertyRef Name="StokHareketID" />
+    </Key>
+    <Property Name="StokHareketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StokID" Type="int" Nullable="false" />
+    <Property Name="HareketSecimID" Type="int" Nullable="false" />
+    <Property Name="OzelKod" Type="nvarchar" MaxLength="50" />
+    <Property Name="IslemTarih" Type="date" />
+    <Property Name="IslemSaat" Type="time" Precision="7" />
+    <Property Name="EvrakNumara" Type="nvarchar" MaxLength="50" />
+    <Property Name="Miktar" Type="int" />
+    <Property Name="IslemTur" Type="nvarchar" MaxLength="50" />
+    <Property Name="Aciklama" Type="nvarchar(max)" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StokKayit">
+    <Key>
+      <PropertyRef Name="StokID" />
+    </Key>
+    <Property Name="StokID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdetBirimID" Type="int" Nullable="false" />
+    <Property Name="StokBakiyeUyariID" Type="int" Nullable="false" />
+    <Property Name="TedarikciID" Type="int" Nullable="false" />
+    <Property Name="Durum" Type="nvarchar" MaxLength="50" />
+    <Property Name="StokAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="BarkodNumara" Type="nvarchar" MaxLength="50" />
+    <Property Name="OzelKod_1" Type="nvarchar" MaxLength="50" />
+    <Property Name="OzelKod_2" Type="nvarchar" MaxLength="50" />
+    <Property Name="OTV" Type="nvarchar" MaxLength="50" />
+    <Property Name="OIV" Type="nvarchar" MaxLength="50" />
+    <Property Name="Aciklama" Type="nvarchar(max)" />
+    <Property Name="KdvOranAlis" Type="int" Nullable="false" />
+    <Property Name="KdvOranSatisParekende" Type="int" Nullable="false" />
+    <Property Name="KdvOranSatisToptan" Type="int" Nullable="false" />
+    <Property Name="TevkifatOran" Type="nvarchar" MaxLength="50" />
+    <Property Name="Resim" Type="nvarchar" MaxLength="150" />
+    <Property Name="DosyaEvrak" Type="nvarchar" MaxLength="150" />
+    <Property Name="AlisFiyat" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SatisFiyat" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TedarikciBilgi">
+    <Key>
+      <PropertyRef Name="TedarikciID" />
+    </Key>
+    <Property Name="TedarikciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Unvan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Departman" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ulke">
+    <Key>
+      <PropertyRef Name="UlkeID" />
+    </Key>
+    <Property Name="UlkeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UlkeAd" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Yetki">
+    <Key>
+      <PropertyRef Name="YetkiID" />
+    </Key>
+    <Property Name="YetkiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YetkiAd" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="YetkiAlan">
+    <Key>
+      <PropertyRef Name="YetkiAlanID" />
+    </Key>
+    <Property Name="YetkiAlanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UstAlan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Alan" Type="nvarchar" MaxLength="50" />
+    <Property Name="AltAlan" Type="nvarchar" MaxLength="50" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="YetkiDetay">
+    <Key>
+      <PropertyRef Name="YetkiDetayID" />
+    </Key>
+    <Property Name="YetkiDetayID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciID" Type="int" Nullable="false" />
+    <Property Name="YetkiID" Type="int" Nullable="false" />
+    <Property Name="YetkiAlanID" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="QtekBilisim_MuhasebeDbModelStoreContainer">
+    <EntitySet Name="AdetBirim" EntityType="Self.AdetBirim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AlacakBakiye" EntityType="Self.AlacakBakiye" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AlisFiyat" EntityType="Self.AlisFiyat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BankaBilgi" EntityType="Self.BankaBilgi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BankaHareket" EntityType="Self.BankaHareket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BankaKayit" EntityType="Self.BankaKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BorcBakiye" EntityType="Self.BorcBakiye" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CariHareket" EntityType="Self.CariHareket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CariKayit" EntityType="Self.CariKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cek" EntityType="Self.Cek" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DepoKayit" EntityType="Self.DepoKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dil" EntityType="Self.Dil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dosya" EntityType="Self.Dosya" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DovizBirim" EntityType="Self.DovizBirim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FaturaBilgi" EntityType="Self.FaturaBilgi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grup" EntityType="Self.Grup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HareketSecim" EntityType="Self.HareketSecim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HataKayit" EntityType="Self.HataKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ilce" EntityType="Self.Ilce" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KasaHareket" EntityType="Self.KasaHareket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KasaKayit" EntityType="Self.KasaKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KdvOran" EntityType="Self.KdvOran" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KrediKart" EntityType="Self.KrediKart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pos" EntityType="Self.Pos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SatisFiyat" EntityType="Self.SatisFiyat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sehir" EntityType="Self.Sehir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Senet" EntityType="Self.Senet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SirketKayit" EntityType="Self.SirketKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SirketTur" EntityType="Self.SirketTur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StackTraceFrame" EntityType="Self.StackTraceFrame" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StokBakiyeUyari" EntityType="Self.StokBakiyeUyari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StokHareket" EntityType="Self.StokHareket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StokKayit" EntityType="Self.StokKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TedarikciBilgi" EntityType="Self.TedarikciBilgi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ulke" EntityType="Self.Ulke" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yetki" EntityType="Self.Yetki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YetkiAlan" EntityType="Self.YetkiAlan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YetkiDetay" EntityType="Self.YetkiDetay" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

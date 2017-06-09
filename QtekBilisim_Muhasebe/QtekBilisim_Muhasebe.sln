@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QtekBilisim_Muhasebe.BL", "QtekBilisim_Muhasebe.BL", "{1C64117F-EF17-4942-8544-5B4B1B6DEFAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QtekBilisim_Muhasebe.DAL", "QtekBilisim_Muhasebe.DAL", "{0F8ED452-19F0-4C16-B4B7-62FCC3EF0FE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QtekBilisim_Muhasebe.PL", "QtekBilisim_Muhasebe.PL", "{8BD5AC60-8676-4C4B-AE80-0C30A809A685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtekBilisim_Muhasebe.BL.Model", "QtekBilisim_Muhasebe.BL.Model\QtekBilisim_Muhasebe.BL.Model.csproj", "{B1E1EFD2-45A4-4C8C-9329-AD03C809B2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtekBilisim_Muhasebe.BL.Entity", "QtekBilisim_Muhasebe.BL.Entity\QtekBilisim_Muhasebe.BL.Entity.csproj", "{6986EBF2-008D-4C51-BC6B-5F1C1138EA23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtekBilisim_Muhasebe.BL.Repository", "QtekBilisim_Muhasebe.BL.Repository\QtekBilisim_Muhasebe.BL.Repository.csproj", "{12065BE3-2564-4E08-B9C0-C70F6C480FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtekBilisim_Muhasebe.PL.Windows", "QtekBilisim_Muhasebe.PL.Windows\QtekBilisim_Muhasebe.PL.Windows.csproj", "{646BC011-97B3-4CA9-80AD-C039DABCF301}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QtekBilisim_Muhasebe.Test", "QtekBilisim_Muhasebe.Test", "{4A591CD3-FE83-472A-86BC-B36F6DF8A6B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtekBilisim_Muhasebe.PL.ApplicationConsole", "QtekBilisim_Muhasebe.PL.ApplicationConsole\QtekBilisim_Muhasebe.PL.ApplicationConsole.csproj", "{926A07E0-7D03-4CF0-876B-4E82B5A3F194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtekBilisim_Muhasebe.DAL.Service", "QtekBilisim_Muhasebe.DAL.Service\QtekBilisim_Muhasebe.DAL.Service.csproj", "{139A75F9-0EAC-4175-85E9-DA0128AB11F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtekBilisim_Muhasebe.Test.UnitTestProject", "QtekBilisim_Muhasebe.Test.UnitTestProject\QtekBilisim_Muhasebe.Test.UnitTestProject.csproj", "{682E16BE-C8D0-49EB-AD96-3AE1329051AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1E1EFD2-45A4-4C8C-9329-AD03C809B2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1E1EFD2-45A4-4C8C-9329-AD03C809B2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1E1EFD2-45A4-4C8C-9329-AD03C809B2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1E1EFD2-45A4-4C8C-9329-AD03C809B2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6986EBF2-008D-4C51-BC6B-5F1C1138EA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6986EBF2-008D-4C51-BC6B-5F1C1138EA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6986EBF2-008D-4C51-BC6B-5F1C1138EA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6986EBF2-008D-4C51-BC6B-5F1C1138EA23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12065BE3-2564-4E08-B9C0-C70F6C480FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12065BE3-2564-4E08-B9C0-C70F6C480FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12065BE3-2564-4E08-B9C0-C70F6C480FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12065BE3-2564-4E08-B9C0-C70F6C480FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{646BC011-97B3-4CA9-80AD-C039DABCF301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646BC011-97B3-4CA9-80AD-C039DABCF301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646BC011-97B3-4CA9-80AD-C039DABCF301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646BC011-97B3-4CA9-80AD-C039DABCF301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{926A07E0-7D03-4CF0-876B-4E82B5A3F194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926A07E0-7D03-4CF0-876B-4E82B5A3F194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926A07E0-7D03-4CF0-876B-4E82B5A3F194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926A07E0-7D03-4CF0-876B-4E82B5A3F194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{139A75F9-0EAC-4175-85E9-DA0128AB11F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{139A75F9-0EAC-4175-85E9-DA0128AB11F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{139A75F9-0EAC-4175-85E9-DA0128AB11F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{139A75F9-0EAC-4175-85E9-DA0128AB11F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682E16BE-C8D0-49EB-AD96-3AE1329051AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682E16BE-C8D0-49EB-AD96-3AE1329051AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682E16BE-C8D0-49EB-AD96-3AE1329051AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682E16BE-C8D0-49EB-AD96-3AE1329051AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1E1EFD2-45A4-4C8C-9329-AD03C809B2B4} = {1C64117F-EF17-4942-8544-5B4B1B6DEFAC}
+		{6986EBF2-008D-4C51-BC6B-5F1C1138EA23} = {1C64117F-EF17-4942-8544-5B4B1B6DEFAC}
+		{12065BE3-2564-4E08-B9C0-C70F6C480FE9} = {1C64117F-EF17-4942-8544-5B4B1B6DEFAC}
+		{646BC011-97B3-4CA9-80AD-C039DABCF301} = {8BD5AC60-8676-4C4B-AE80-0C30A809A685}
+		{926A07E0-7D03-4CF0-876B-4E82B5A3F194} = {8BD5AC60-8676-4C4B-AE80-0C30A809A685}
+		{139A75F9-0EAC-4175-85E9-DA0128AB11F0} = {0F8ED452-19F0-4C16-B4B7-62FCC3EF0FE1}
+		{682E16BE-C8D0-49EB-AD96-3AE1329051AC} = {4A591CD3-FE83-472A-86BC-B36F6DF8A6B4}
+	EndGlobalSection
+EndGlobal

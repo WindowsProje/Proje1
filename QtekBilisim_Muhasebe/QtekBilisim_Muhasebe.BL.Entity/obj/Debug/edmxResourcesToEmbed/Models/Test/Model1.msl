@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QtekBilisim_MuhasebeDbModelStoreContainer" CdmEntityContainer="QtekBilisim_MuhasebeDbEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dil">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Dil">
+        <MappingFragment StoreEntitySet="Dil">
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+          <ScalarProperty Name="DilAd" ColumnName="DilAd" />
+          <ScalarProperty Name="DilSembol" ColumnName="DilSembol" />
+          <ScalarProperty Name="DilKod" ColumnName="DilKod" />
+          <ScalarProperty Name="ParaBirim" ColumnName="ParaBirim" />
+          <ScalarProperty Name="ParaBirimSembol" ColumnName="ParaBirimSembol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HataKayit">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.HataKayit">
+        <MappingFragment StoreEntitySet="HataKayit">
+          <ScalarProperty Name="HataKayitID" ColumnName="HataKayitID" />
+          <ScalarProperty Name="HelpLink" ColumnName="HelpLink" />
+          <ScalarProperty Name="InnerExceptionID" ColumnName="InnerExceptionID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="TargetSite" ColumnName="TargetSite" />
+          <ScalarProperty Name="HataTarih" ColumnName="HataTarih" />
+          <ScalarProperty Name="HataZaman" ColumnName="HataZaman" />
+          <ScalarProperty Name="HataKod" ColumnName="HataKod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ilce">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Ilce">
+        <MappingFragment StoreEntitySet="Ilce">
+          <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+          <ScalarProperty Name="IlceAd" ColumnName="IlceAd" />
+          <ScalarProperty Name="SehirID" ColumnName="SehirID" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+          <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="KullaniciKod" ColumnName="KullaniciKod" />
+          <ScalarProperty Name="Bolum" ColumnName="Bolum" />
+          <ScalarProperty Name="KullaniciAd" ColumnName="KullaniciAd" />
+          <ScalarProperty Name="KullaniciSifre" ColumnName="KullaniciSifre" />
+          <ScalarProperty Name="VarsayilanSirketID" ColumnName="VarsayilanSirketID" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+          <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sehir">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Sehir">
+        <MappingFragment StoreEntitySet="Sehir">
+          <ScalarProperty Name="SehirID" ColumnName="SehirID" />
+          <ScalarProperty Name="SehirAd" ColumnName="SehirAd" />
+          <ScalarProperty Name="UlkeID" ColumnName="UlkeID" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+          <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SirketKayit">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.SirketKayit">
+        <MappingFragment StoreEntitySet="SirketKayit">
+          <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+          <ScalarProperty Name="TicariUnvan" ColumnName="TicariUnvan" />
+          <ScalarProperty Name="Yetkili" ColumnName="Yetkili" />
+          <ScalarProperty Name="VergiDaire" ColumnName="VergiDaire" />
+          <ScalarProperty Name="VergiNumara" ColumnName="VergiNumara" />
+          <ScalarProperty Name="VergiDaireKod" ColumnName="VergiDaireKod" />
+          <ScalarProperty Name="TicariSicilNumara" ColumnName="TicariSicilNumara" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+          <ScalarProperty Name="CalismaYil" ColumnName="CalismaYil" />
+          <ScalarProperty Name="KurulusTarih" ColumnName="KurulusTarih" />
+          <ScalarProperty Name="Telefon_1" ColumnName="Telefon_1" />
+          <ScalarProperty Name="Telefon_2" ColumnName="Telefon_2" />
+          <ScalarProperty Name="Faks" ColumnName="Faks" />
+          <ScalarProperty Name="SirketTurID" ColumnName="SirketTurID" />
+          <ScalarProperty Name="Muhasebeci" ColumnName="Muhasebeci" />
+          <ScalarProperty Name="Not" ColumnName="Not" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SirketTur">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.SirketTur">
+        <MappingFragment StoreEntitySet="SirketTur">
+          <ScalarProperty Name="SirketTurID" ColumnName="SirketTurID" />
+          <ScalarProperty Name="SirketTurAd" ColumnName="SirketTurAd" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StackTraceFrame">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.StackTraceFrame">
+        <MappingFragment StoreEntitySet="StackTraceFrame">
+          <ScalarProperty Name="StackTraceFrameID" ColumnName="StackTraceFrameID" />
+          <ScalarProperty Name="HataKayitID" ColumnName="HataKayitID" />
+          <ScalarProperty Name="Frame" ColumnName="Frame" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ulke">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Ulke">
+        <MappingFragment StoreEntitySet="Ulke">
+          <ScalarProperty Name="UlkeID" ColumnName="UlkeID" />
+          <ScalarProperty Name="UlkeAd" ColumnName="UlkeAd" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+          <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yetki">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.Yetki">
+        <MappingFragment StoreEntitySet="Yetki">
+          <ScalarProperty Name="YetkiID" ColumnName="YetkiID" />
+          <ScalarProperty Name="YetkiAd" ColumnName="YetkiAd" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+          <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YetkiAlan">
+      <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.YetkiAlan">
+        <MappingFragment StoreEntitySet="YetkiAlan">
+          <ScalarProperty Name="YetkiAlanID" ColumnName="YetkiAlanID" />
+          <ScalarProperty Name="YetkiAlanAd" ColumnName="YetkiAlanAd" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
+          <ScalarProperty Name="DilID" ColumnName="DilID" />
+          <ScalarProperty Name="SirketID" ColumnName="SirketID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,40 @@
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll.config
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.xml
+c:\users\hp\documents\visual studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.csprojResolveAssemblyReference.cache
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll.config
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.xml
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.csprojResolveAssemblyReference.cache
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\My Files\Qtek Bilişim\Projects\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll.config
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.xml
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.csprojResolveAssemblyReference.cache
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\Users\RamazaN\Desktop\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll.config
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.xml
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Model\obj\Debug\QtekBilisim_Muhasebe.BL.Model.pdb

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QtekBilisim_MuhasebeDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dil">
+    <Key>
+      <PropertyRef Name="DilID" />
+    </Key>
+    <Property Name="DilID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DilAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DilSembol" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="DilKod" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="ParaBirim" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ParaBirimSembol" Type="nvarchar" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HataKayit">
+    <Key>
+      <PropertyRef Name="HataKayitID" />
+    </Key>
+    <Property Name="HataKayitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HelpLink" Type="nvarchar(max)" />
+    <Property Name="InnerExceptionID" Type="int" Nullable="false" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="Source" Type="nvarchar(max)" />
+    <Property Name="StackTrace" Type="nvarchar(max)" />
+    <Property Name="TargetSite" Type="nvarchar(max)" />
+    <Property Name="HataTarih" Type="datetime" Nullable="false" />
+    <Property Name="HataZaman" Type="datetime" Nullable="false" />
+    <Property Name="HataKod" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ilce">
+    <Key>
+      <PropertyRef Name="IlceID" />
+    </Key>
+    <Property Name="IlceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IlceAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SehirID" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KullaniciKod" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Bolum" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KullaniciAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KullaniciSifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VarsayilanSirketID" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sehir">
+    <Key>
+      <PropertyRef Name="SehirID" />
+    </Key>
+    <Property Name="SehirID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SehirAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UlkeID" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SirketKayit">
+    <Key>
+      <PropertyRef Name="SirketID" />
+    </Key>
+    <Property Name="SirketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TicariUnvan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Yetkili" Type="nvarchar" MaxLength="50" />
+    <Property Name="VergiDaire" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="VergiNumara" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="VergiDaireKod" Type="nvarchar" MaxLength="10" />
+    <Property Name="TicariSicilNumara" Type="nvarchar" MaxLength="10" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IlceID" Type="int" Nullable="false" />
+    <Property Name="CalismaYil" Type="int" Nullable="false" />
+    <Property Name="KurulusTarih" Type="datetime" Nullable="false" />
+    <Property Name="Telefon_1" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Telefon_2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Faks" Type="nvarchar" MaxLength="20" />
+    <Property Name="SirketTurID" Type="int" Nullable="false" />
+    <Property Name="Muhasebeci" Type="nvarchar" MaxLength="75" Nullable="false" />
+    <Property Name="Not" Type="nvarchar(max)" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SirketTur">
+    <Key>
+      <PropertyRef Name="SirketTurID" />
+    </Key>
+    <Property Name="SirketTurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SirketTurAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StackTraceFrame">
+    <Key>
+      <PropertyRef Name="StackTraceFrameID" />
+    </Key>
+    <Property Name="StackTraceFrameID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HataKayitID" Type="int" Nullable="false" />
+    <Property Name="Frame" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ulke">
+    <Key>
+      <PropertyRef Name="UlkeID" />
+    </Key>
+    <Property Name="UlkeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UlkeAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Yetki">
+    <Key>
+      <PropertyRef Name="YetkiID" />
+    </Key>
+    <Property Name="YetkiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YetkiAd" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="YetkiAlan">
+    <Key>
+      <PropertyRef Name="YetkiAlanID" />
+    </Key>
+    <Property Name="YetkiAlanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YetkiAlanAd" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="SilindiMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTarih" Type="datetime" Nullable="false" />
+    <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
+    <Property Name="DilID" Type="int" Nullable="false" />
+    <Property Name="SirketID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="QtekBilisim_MuhasebeDbModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dil" EntityType="Self.Dil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HataKayit" EntityType="Self.HataKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ilce" EntityType="Self.Ilce" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sehir" EntityType="Self.Sehir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SirketKayit" EntityType="Self.SirketKayit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SirketTur" EntityType="Self.SirketTur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StackTraceFrame" EntityType="Self.StackTraceFrame" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ulke" EntityType="Self.Ulke" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yetki" EntityType="Self.Yetki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="YetkiAlan" EntityType="Self.YetkiAlan" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

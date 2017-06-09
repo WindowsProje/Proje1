@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1E1EFD2-45A4-4C8C-9329-AD03C809B2B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QtekBilisim_Muhasebe.BL.Model</RootNamespace>
+    <AssemblyName>QtekBilisim_Muhasebe.BL.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\AdetBirim\AdetBirimFiltreDTO.cs" />
+    <Compile Include="DTO\AdetBirim\AdetBirimListeDTO.cs" />
+    <Compile Include="DTO\AdetBirim\AdetBirimOzelDTO.cs" />
+    <Compile Include="DTO\AdetBirim\AdetBirimTumDTO.cs" />
+    <Compile Include="DTO\AlacakBakiye\AlacakBakiyeFiltreDTO.cs" />
+    <Compile Include="DTO\AlacakBakiye\AlacakBakiyeListeDTO.cs" />
+    <Compile Include="DTO\AlacakBakiye\AlacakBakiyeOzelDTO.cs" />
+    <Compile Include="DTO\AlacakBakiye\AlacakBakiyeTumDTO.cs" />
+    <Compile Include="DTO\AlisFiyat\AlisFiyatFiltreDTO.cs" />
+    <Compile Include="DTO\AlisFiyat\AlisFiyatListeDTO.cs" />
+    <Compile Include="DTO\AlisFiyat\AlisFiyatOzelDTO.cs" />
+    <Compile Include="DTO\AlisFiyat\AlisFiyatTumDTO.cs" />
+    <Compile Include="DTO\BankaBilgi\BankaBilgiFiltreDTO.cs" />
+    <Compile Include="DTO\BankaBilgi\BankaBilgiListeDTO.cs" />
+    <Compile Include="DTO\BankaBilgi\BankaBilgiOzelDTO.cs" />
+    <Compile Include="DTO\BankaBilgi\BankaBilgiTumDTO.cs" />
+    <Compile Include="DTO\BankaHareket\BankaHareketFiltreDTO.cs" />
+    <Compile Include="DTO\BankaHareket\BankaHareketListeDTO.cs" />
+    <Compile Include="DTO\BankaHareket\BankaHareketOzelDTO.cs" />
+    <Compile Include="DTO\BankaHareket\BankaHareketTumDTO.cs" />
+    <Compile Include="DTO\BankaKayit\BankaKayitFiltreDTO.cs" />
+    <Compile Include="DTO\BankaKayit\BankaKayitListeDTO.cs" />
+    <Compile Include="DTO\BankaKayit\BankaKayitOzelDTO.cs" />
+    <Compile Include="DTO\BankaKayit\BankaKayitTumDTO.cs" />
+    <Compile Include="DTO\BorcBakiye\BorcBakiyeFiltreDTO.cs" />
+    <Compile Include="DTO\BorcBakiye\BorcBakiyeListeDTO.cs" />
+    <Compile Include="DTO\BorcBakiye\BorcBakiyeOzelDTO.cs" />
+    <Compile Include="DTO\BorcBakiye\BorcBakiyeTumDTO.cs" />
+    <Compile Include="DTO\CariHareket\CariHareketFiltreDTO.cs" />
+    <Compile Include="DTO\CariHareket\CariHareketListeDTO.cs" />
+    <Compile Include="DTO\CariHareket\CariHareketOzelDTO.cs" />
+    <Compile Include="DTO\CariHareket\CariHareketTumDTO.cs" />
+    <Compile Include="DTO\CariKayit\CariKayitFiltreDTO.cs" />
+    <Compile Include="DTO\CariKayit\CariKayitListeDTO.cs" />
+    <Compile Include="DTO\CariKayit\CariKayitOzelDTO.cs" />
+    <Compile Include="DTO\CariKayit\CariKayitTumDTO.cs" />
+    <Compile Include="DTO\Cek\CekFiltreDTO.cs" />
+    <Compile Include="DTO\Cek\CekListeDTO.cs" />
+    <Compile Include="DTO\Cek\CekOzelDTO.cs" />
+    <Compile Include="DTO\Cek\CekTumDTO.cs" />
+    <Compile Include="DTO\DepoKayit\DepoKayitFiltreDTO.cs" />
+    <Compile Include="DTO\DepoKayit\DepoKayitListeDTO.cs" />
+    <Compile Include="DTO\DepoKayit\DepoKayitOzelDTO.cs" />
+    <Compile Include="DTO\DepoKayit\DepoKayitTumDTO.cs" />
+    <Compile Include="DTO\Dil\DilFiltreDTO.cs" />
+    <Compile Include="DTO\Dil\DilListeDTO.cs" />
+    <Compile Include="DTO\Dil\DilOzelDTO.cs" />
+    <Compile Include="DTO\Dil\DilTumDTO.cs" />
+    <Compile Include="DTO\Dosya\DosyaFiltreDTO.cs" />
+    <Compile Include="DTO\Dosya\DosyaListeDTO.cs" />
+    <Compile Include="DTO\Dosya\DosyaOzelDTO.cs" />
+    <Compile Include="DTO\Dosya\DosyaTumDTO.cs" />
+    <Compile Include="DTO\DovizBirim\DovizBirimFiltreDTO.cs" />
+    <Compile Include="DTO\DovizBirim\DovizBirimListeDTO.cs" />
+    <Compile Include="DTO\DovizBirim\DovizBirimOzelDTO.cs" />
+    <Compile Include="DTO\DovizBirim\DovizBirimTumDTO.cs" />
+    <Compile Include="DTO\Exceptions\NotModifiedDataOnDatabaseCustomException.cs" />
+    <Compile Include="DTO\Exceptions\NullDataOnDatabaseCustomException.cs" />
+    <Compile Include="DTO\FaturaBilgi\FaturaBilgiFiltreDTO.cs" />
+    <Compile Include="DTO\FaturaBilgi\FaturaBilgiListeDTO.cs" />
+    <Compile Include="DTO\FaturaBilgi\FaturaBilgiOzelDTO.cs" />
+    <Compile Include="DTO\FaturaBilgi\FaturaBilgiTumDTO.cs" />
+    <Compile Include="DTO\Filtre.cs" />
+    <Compile Include="DTO\Grup\GrupFiltreDTO.cs" />
+    <Compile Include="DTO\Grup\GrupListeDTO.cs" />
+    <Compile Include="DTO\Grup\GrupOzelDTO.cs" />
+    <Compile Include="DTO\Grup\GrupTumDTO.cs" />
+    <Compile Include="DTO\HareketSecim\HareketSecimFiltreDTO.cs" />
+    <Compile Include="DTO\HareketSecim\HareketSecimListeDTO.cs" />
+    <Compile Include="DTO\HareketSecim\HareketSecimOzelDTO.cs" />
+    <Compile Include="DTO\HareketSecim\HareketSecimTumDTO.cs" />
+    <Compile Include="DTO\HataKayit\HataKayitDTO.cs" />
+    <Compile Include="DTO\IFiltre.cs" />
+    <Compile Include="DTO\Ilce\IlceFiltreDTO.cs" />
+    <Compile Include="DTO\Ilce\IlceListeDTO.cs" />
+    <Compile Include="DTO\Ilce\IlceOzelDTO.cs" />
+    <Compile Include="DTO\Ilce\IlceTumDTO.cs" />
+    <Compile Include="DTO\IModel.cs" />
+    <Compile Include="DTO\KasaHareket\KasaHareketFiltreDTO.cs" />
+    <Compile Include="DTO\KasaHareket\KasaHareketListeDTO.cs" />
+    <Compile Include="DTO\KasaHareket\KasaHareketOzelDTO.cs" />
+    <Compile Include="DTO\KasaHareket\KasaHareketTumDTO.cs" />
+    <Compile Include="DTO\KasaKayit\KasaKayitFiltreDTO.cs" />
+    <Compile Include="DTO\KasaKayit\KasaKayitListeDTO.cs" />
+    <Compile Include="DTO\KasaKayit\KasaKayitOzelDTO.cs" />
+    <Compile Include="DTO\KasaKayit\KasaKayitTumDTO.cs" />
+    <Compile Include="DTO\KdvOran\KdvOranFiltreDTO.cs" />
+    <Compile Include="DTO\KdvOran\KdvOranListeDTO.cs" />
+    <Compile Include="DTO\KdvOran\KdvOranOzelDTO.cs" />
+    <Compile Include="DTO\KdvOran\KdvOranTumDTO.cs" />
+    <Compile Include="DTO\KrediKart\KrediKartFiltreDTO.cs" />
+    <Compile Include="DTO\KrediKart\KrediKartListeDTO.cs" />
+    <Compile Include="DTO\KrediKart\KrediKartOzelDTO.cs" />
+    <Compile Include="DTO\KrediKart\KrediKartTumDTO.cs" />
+    <Compile Include="DTO\Kullanici\KullaniciFiltreDTO.cs" />
+    <Compile Include="DTO\Kullanici\KullaniciListeDTO.cs" />
+    <Compile Include="DTO\Kullanici\KullaniciOzelDTO.cs" />
+    <Compile Include="DTO\Kullanici\KullaniciTumDTO.cs" />
+    <Compile Include="DTO\Model.cs" />
+    <Compile Include="DTO\Pos\PosFiltreDTO.cs" />
+    <Compile Include="DTO\Pos\PosListeDTO.cs" />
+    <Compile Include="DTO\Pos\PosOzelDTO.cs" />
+    <Compile Include="DTO\Pos\PosTumDTO.cs" />
+    <Compile Include="DTO\Rol\RolFiltreDTO.cs" />
+    <Compile Include="DTO\Rol\RolListeDTO.cs" />
+    <Compile Include="DTO\Rol\RolOzelDTO.cs" />
+    <Compile Include="DTO\Rol\RolTumDTO.cs" />
+    <Compile Include="DTO\SatisFiyat\SatisFiyatFiltreDTO.cs" />
+    <Compile Include="DTO\SatisFiyat\SatisFiyatListeDTO.cs" />
+    <Compile Include="DTO\SatisFiyat\SatisFiyatOzelDTO.cs" />
+    <Compile Include="DTO\SatisFiyat\SatisFiyatTumDTO.cs" />
+    <Compile Include="DTO\Sehir\SehirFiltreDTO.cs" />
+    <Compile Include="DTO\Sehir\SehirListeDTO.cs" />
+    <Compile Include="DTO\Sehir\SehirOzelDTO.cs" />
+    <Compile Include="DTO\Sehir\SehirTumDTO.cs" />
+    <Compile Include="DTO\Senet\SenetFiltreDTO.cs" />
+    <Compile Include="DTO\Senet\SenetListeDTO.cs" />
+    <Compile Include="DTO\Senet\SenetOzelDTO.cs" />
+    <Compile Include="DTO\Senet\SenetTumDTO.cs" />
+    <Compile Include="DTO\SirketKayit\SirketKayitFiltreDTO.cs" />
+    <Compile Include="DTO\SirketKayit\SirketKayitListeDTO.cs" />
+    <Compile Include="DTO\SirketKayit\SirketKayitOzelDTO.cs" />
+    <Compile Include="DTO\SirketKayit\SirketKayitTumDTO.cs" />
+    <Compile Include="DTO\SirketTur\SirketTurFiltreDTO.cs" />
+    <Compile Include="DTO\SirketTur\SirketTurListeDTO.cs" />
+    <Compile Include="DTO\SirketTur\SirketTurOzelDTO.cs" />
+    <Compile Include="DTO\SirketTur\SirketTurTumDTO.cs" />
+    <Compile Include="DTO\StackTraceFrame\StackTraceFrameFiltreDTO.cs" />
+    <Compile Include="DTO\StackTraceFrame\StackTraceFrameListeDTO.cs" />
+    <Compile Include="DTO\StackTraceFrame\StackTraceFrameOzelDTO.cs" />
+    <Compile Include="DTO\StackTraceFrame\StackTraceFrameTumDTO.cs" />
+    <Compile Include="DTO\StokBakiyeUyari\StokBakiyeUyariFiltreDTO.cs" />
+    <Compile Include="DTO\StokBakiyeUyari\StokBakiyeUyariListeDTO.cs" />
+    <Compile Include="DTO\StokBakiyeUyari\StokBakiyeUyariOzelDTO.cs" />
+    <Compile Include="DTO\StokBakiyeUyari\StokBakiyeUyariTumDTO.cs" />
+    <Compile Include="DTO\StokHareket\StokHareketFiltreDTO.cs" />
+    <Compile Include="DTO\StokHareket\StokHareketListeDTO.cs" />
+    <Compile Include="DTO\StokHareket\StokHareketOzelDTO.cs" />
+    <Compile Include="DTO\StokHareket\StokHareketTumDTO.cs" />
+    <Compile Include="DTO\StokKayit\StokKayitFiltreDTO.cs" />
+    <Compile Include="DTO\StokKayit\StokKayitListeDTO.cs" />
+    <Compile Include="DTO\StokKayit\StokKayitOzelDTO.cs" />
+    <Compile Include="DTO\StokKayit\StokKayitTumDTO.cs" />
+    <Compile Include="DTO\TedarikciBilgi\TedarikciBilgiFiltreDTO.cs" />
+    <Compile Include="DTO\TedarikciBilgi\TedarikciBilgiListeDTO.cs" />
+    <Compile Include="DTO\TedarikciBilgi\TedarikciBilgiOzelDTO.cs" />
+    <Compile Include="DTO\TedarikciBilgi\TedarikciBilgiTumDTO.cs" />
+    <Compile Include="DTO\Ulke\UlkeFiltreDTO.cs" />
+    <Compile Include="DTO\Ulke\UlkeListeDTO.cs" />
+    <Compile Include="DTO\Ulke\UlkeOzelDTO.cs" />
+    <Compile Include="DTO\Ulke\UlkeTumDTO.cs" />
+    <Compile Include="DTO\YetkiAlan\YetkiAlanFiltreDTO.cs" />
+    <Compile Include="DTO\YetkiAlan\YetkiAlanListeDTO.cs" />
+    <Compile Include="DTO\YetkiAlan\YetkiAlanOzelDTO.cs" />
+    <Compile Include="DTO\YetkiAlan\YetkiAlanTumDTO.cs" />
+    <Compile Include="DTO\YetkiDetay\YetkiDetayFiltreDTO.cs" />
+    <Compile Include="DTO\YetkiDetay\YetkiDetayListeDTO.cs" />
+    <Compile Include="DTO\YetkiDetay\YetkiDetayOzelDTO.cs" />
+    <Compile Include="DTO\YetkiDetay\YetkiDetayTumDTO.cs" />
+    <Compile Include="DTO\Yetki\YetkiFiltreDTO.cs" />
+    <Compile Include="DTO\Yetki\YetkiListeDTO.cs" />
+    <Compile Include="DTO\Yetki\YetkiOzelDTO.cs" />
+    <Compile Include="DTO\Yetki\YetkiTumDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
