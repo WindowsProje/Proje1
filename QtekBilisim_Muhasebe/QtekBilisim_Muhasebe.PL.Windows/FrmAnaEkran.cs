@@ -61,5 +61,34 @@ namespace QtekBilisim_Muhasebe.PL.Windows
         {
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            //pnlIslem.Controls.Clear();
+            //FrmCariKayit frm = new FrmCariKayit();
+            //frm.TopLevel = false;
+            //pnlIslem.Controls.Add(frm);
+            //frm.Show();
+            //frm.Dock = DockStyle.Fill;
+            //frm.BringToFront();
+
+
+            //TabPage tabcontrol = new TabPage();
+
+            FrmCariKayit frm = new FrmCariKayit();
+            frm.Show();
+            //frm.TopLevel = false;
+            //tabcontrol.Controls.Add(frm);
+            //frm.Show();
+            //frm.Dock = DockStyle.None;
+            //frm.BringToFront();
+            //tab.Controls.Add(tabcontrol);
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

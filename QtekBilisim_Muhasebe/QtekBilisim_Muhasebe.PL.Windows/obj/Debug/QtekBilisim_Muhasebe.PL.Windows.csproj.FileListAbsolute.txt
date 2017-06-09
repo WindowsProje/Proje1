@@ -112,11 +112,9 @@ E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\b
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\EntityFramework.SqlServer.xml
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\bin\Debug\QtekBilisim_Muhasebe.BL.Repository.pdb
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.csprojResolveAssemblyReference.cache
-E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Form1.resources
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmAnaEkran.resources
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariHarektRaporu.resources
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayit.resources
-E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.FrmCariKayitIslemlerMenu.resources
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.resources
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.Properties.Resources.resources
 E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.PL.Windows\obj\Debug\QtekBilisim_Muhasebe.PL.Windows.LanguageResources.LanguageResource.en-US.resources

@@ -54,3 +54,17 @@ C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL
 C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\obj\Debug\QtekBilisim_Muhasebe.BL.Entity.csproj.GenerateResource.Cache
 C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\obj\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
 C:\Users\hp\Documents\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\obj\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll.config
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\EntityFramework.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\QtekBilisim_Muhasebe.BL.Model.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\QtekBilisim_Muhasebe.BL.Model.pdb
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\EntityFramework.xml
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\obj\Debug\QtekBilisim_Muhasebe.BL.Entity.csprojResolveAssemblyReference.cache
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\obj\Debug\QtekBilisim_Muhasebe.BL.Entity.Properties.Resources.resources
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\obj\Debug\QtekBilisim_Muhasebe.BL.Entity.csproj.GenerateResource.Cache
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\obj\Debug\QtekBilisim_Muhasebe.BL.Entity.dll
+E:\Projeler\GitHub\Proje1\QtekBilisim_Muhasebe\QtekBilisim_Muhasebe.BL.Entity\obj\Debug\QtekBilisim_Muhasebe.BL.Entity.pdb

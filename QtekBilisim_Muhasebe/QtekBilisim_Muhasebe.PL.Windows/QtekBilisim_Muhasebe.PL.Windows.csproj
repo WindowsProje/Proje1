@@ -62,12 +62,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmAnaEkran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +80,6 @@
     <Compile Include="FrmCariKayit.Designer.cs">
       <DependentUpon>FrmCariKayit.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCariKayitIslemlerMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCariKayitIslemlerMenu.Designer.cs">
-      <DependentUpon>FrmCariKayitIslemlerMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="LanguageResources\LanguageResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,9 +87,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmAnaEkran.resx">
       <DependentUpon>FrmAnaEkran.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,9 +95,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCariKayit.resx">
       <DependentUpon>FrmCariKayit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmCariKayitIslemlerMenu.resx">
-      <DependentUpon>FrmCariKayitIslemlerMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LanguageResources\LanguageResource.en-US.resx" />
     <EmbeddedResource Include="LanguageResources\LanguageResource.resx">
