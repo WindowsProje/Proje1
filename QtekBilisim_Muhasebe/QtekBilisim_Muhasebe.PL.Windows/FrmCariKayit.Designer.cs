@@ -41,6 +41,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.TbControlGenelBilgiler = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -49,6 +50,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -70,6 +72,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -82,9 +86,11 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -92,17 +98,11 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -112,6 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -285,6 +286,23 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button11.ForeColor = System.Drawing.Color.Black;
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button11.Location = new System.Drawing.Point(743, 1);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(60, 58);
+            this.button11.TabIndex = 4;
+            this.button11.Text = "Ara";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button11.UseVisualStyleBackColor = false;
+            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -320,7 +338,7 @@
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(868, 490);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Genel Bilgiler";
@@ -412,6 +430,15 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(162, 23);
             this.comboBox3.TabIndex = 55;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(144, 165);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(113, 23);
+            this.comboBox7.TabIndex = 55;
             // 
             // comboBox2
             // 
@@ -624,6 +651,26 @@
             this.label3.TabIndex = 29;
             this.label3.Text = "Ad :";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label19.Location = new System.Drawing.Point(57, 136);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(73, 16);
+            this.label19.TabIndex = 30;
+            this.label19.Text = "Cari Kodu :";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(69, 167);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(61, 16);
+            this.label18.TabIndex = 30;
+            this.label18.Text = "Durumu :";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -723,6 +770,14 @@
             this.textBox2.Size = new System.Drawing.Size(232, 22);
             this.textBox2.TabIndex = 26;
             // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox14.Location = new System.Drawing.Point(145, 136);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(112, 22);
+            this.textBox14.TabIndex = 28;
+            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -736,7 +791,7 @@
             this.tabPage2.Controls.Add(this.panel4);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(868, 490);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Hesap Bilgileri";
@@ -745,16 +800,13 @@
             // panel4
             // 
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Controls.Add(this.groupBox1);
             this.panel4.Controls.Add(this.comboBox8);
-            this.panel4.Controls.Add(this.checkBox3);
             this.panel4.Controls.Add(this.checkBox4);
-            this.panel4.Controls.Add(this.label23);
             this.panel4.Controls.Add(this.label24);
             this.panel4.Controls.Add(this.label26);
             this.panel4.Controls.Add(this.label28);
             this.panel4.Controls.Add(this.label32);
-            this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.textBox18);
             this.panel4.Controls.Add(this.textBox19);
             this.panel4.Controls.Add(this.textBox20);
             this.panel4.Controls.Add(this.textBox23);
@@ -764,11 +816,19 @@
             this.panel4.Size = new System.Drawing.Size(862, 484);
             this.panel4.TabIndex = 13;
             // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(170, 68);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(121, 25);
+            this.comboBox8.TabIndex = 54;
+            // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox3.Location = new System.Drawing.Point(556, 414);
+            this.checkBox3.Location = new System.Drawing.Point(16, 24);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(142, 20);
             this.checkBox3.TabIndex = 53;
@@ -790,7 +850,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(470, 438);
+            this.label23.Location = new System.Drawing.Point(112, 52);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(74, 16);
             this.label23.TabIndex = 34;
@@ -800,7 +860,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(428, 322);
+            this.label24.Location = new System.Drawing.Point(23, 263);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(122, 16);
             this.label24.TabIndex = 35;
@@ -830,44 +890,35 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label32.Location = new System.Drawing.Point(86, 404);
+            this.label32.Location = new System.Drawing.Point(465, 329);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(40, 16);
             this.label32.TabIndex = 43;
             this.label32.Text = "Not : ";
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label33.Location = new System.Drawing.Point(475, 409);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(75, 16);
-            this.label33.TabIndex = 44;
-            this.label33.Text = "Kara Liste :";
-            // 
             // textBox18
             // 
+            this.textBox18.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.textBox18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox18.Location = new System.Drawing.Point(556, 442);
+            this.textBox18.Location = new System.Drawing.Point(3, 76);
             this.textBox18.Multiline = true;
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(259, 63);
+            this.textBox18.Size = new System.Drawing.Size(322, 102);
             this.textBox18.TabIndex = 12;
             // 
             // textBox19
             // 
             this.textBox19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox19.Location = new System.Drawing.Point(136, 404);
+            this.textBox19.Location = new System.Drawing.Point(511, 329);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(259, 101);
+            this.textBox19.Size = new System.Drawing.Size(325, 133);
             this.textBox19.TabIndex = 13;
             // 
             // textBox20
             // 
             this.textBox20.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox20.Location = new System.Drawing.Point(556, 326);
+            this.textBox20.Location = new System.Drawing.Point(151, 267);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(259, 22);
             this.textBox20.TabIndex = 14;
@@ -875,72 +926,22 @@
             // textBox23
             // 
             this.textBox23.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox23.Location = new System.Drawing.Point(106, 186);
+            this.textBox23.Location = new System.Drawing.Point(134, 184);
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(259, 22);
+            this.textBox23.Size = new System.Drawing.Size(111, 22);
             this.textBox23.TabIndex = 17;
             // 
-            // button11
+            // groupBox1
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.Location = new System.Drawing.Point(743, 1);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(60, 58);
-            this.button11.TabIndex = 4;
-            this.button11.Text = "Ara";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(69, 167);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(61, 16);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "Durumu :";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox14.Location = new System.Drawing.Point(145, 136);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(112, 22);
-            this.textBox14.TabIndex = 28;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label19.Location = new System.Drawing.Point(57, 136);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(73, 16);
-            this.label19.TabIndex = 30;
-            this.label19.Text = "Cari Kodu :";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(144, 165);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(113, 23);
-            this.comboBox7.TabIndex = 55;
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(170, 68);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(121, 25);
-            this.comboBox8.TabIndex = 54;
+            this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.textBox18);
+            this.groupBox1.Location = new System.Drawing.Point(509, 50);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(328, 181);
+            this.groupBox1.TabIndex = 55;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Riskli Müşteri";
             // 
             // FrmCariKayit
             // 
@@ -966,6 +967,8 @@
             this.tabPage2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1017,7 +1020,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
@@ -1045,5 +1047,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
