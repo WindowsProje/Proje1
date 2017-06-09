@@ -33,6 +33,6 @@ namespace QtekBilisim_Muhasebe.PL.Windows
 
         }
 
-       
+      
     }
 }
