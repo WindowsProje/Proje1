@@ -20,5 +20,19 @@ namespace QtekBilisim_Muhasebe.BL.Repository.Repositories
                 return RepositoryContext as QtekBilisim_MuhasebeContext;
             }
         }
+
+        public string CariKodGetir()
+        {
+            var temp = CariKayitContext.Set<CariKayit>().FirstOrDefault();
+            if (temp != null)
+            {
+                int id = CariKayitContext.Set<CariKayit>().Max(m => m.CariID);
+                return "CR" + (id + 1).ToString("###");
+            }
+            else
+            {
+                return "CR001";
+            }
+        }
     }
 }

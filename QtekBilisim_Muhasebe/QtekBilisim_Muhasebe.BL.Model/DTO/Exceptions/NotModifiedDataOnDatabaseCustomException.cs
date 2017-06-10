@@ -20,5 +20,12 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Exceptions
         {
 
         }
+        public override string Message
+        {
+            get
+            {
+                return "Not Modified Data On Database Custom Exception";
+            }
+        }
     }
 }

@@ -10,5 +10,9 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Grup
     {
         public int GrupID { get; set; }
         public string GrupAd { get; set; }
+        public override string ToString()
+        {
+            return this.GrupAd;
+        }
     }
 }

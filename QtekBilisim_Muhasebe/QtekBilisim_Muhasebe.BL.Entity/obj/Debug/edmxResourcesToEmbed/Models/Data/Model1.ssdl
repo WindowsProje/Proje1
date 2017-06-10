@@ -149,8 +149,9 @@
       <PropertyRef Name="CariID" />
     </Key>
     <Property Name="CariID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="IlceID" Type="int" Nullable="false" />
-    <Property Name="DovizBirimID" Type="int" Nullable="false" />
+    <Property Name="IlceID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DovizBirimID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="GrupID" Type="nvarchar" MaxLength="15" Nullable="false" />
     <Property Name="CariKod" Type="nvarchar" MaxLength="5" Nullable="false" />
     <Property Name="TicariUnvan" Type="nvarchar" MaxLength="75" />
     <Property Name="Ad" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -166,9 +167,9 @@
     <Property Name="OzelKod_2" Type="nvarchar" MaxLength="25" />
     <Property Name="OzelKod_3" Type="nvarchar" MaxLength="25" />
     <Property Name="Resim" Type="nvarchar" MaxLength="150" />
-    <Property Name="Iskonto" Type="int" Nullable="false" />
-    <Property Name="KullanilacakStokFiyat" Type="int" Nullable="false" />
-    <Property Name="Vade" Type="int" Nullable="false" />
+    <Property Name="Iskonto" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="KullanilacakStokFiyat" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Vade" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="KaraListe" Type="nvarchar(max)" />
     <Property Name="Not" Type="nvarchar(max)" />
     <Property Name="DovizHesabiVarMi" Type="bit" Nullable="false" />
@@ -177,9 +178,9 @@
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-    <Property Name="DilID" Type="int" Nullable="false" />
-    <Property Name="SirketID" Type="int" Nullable="false" />
-    <Property Name="KullaniciID" Type="int" Nullable="false" />
+    <Property Name="DilID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SirketID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="KullaniciID" Type="nvarchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="Cek">
     <Key>
@@ -252,8 +253,9 @@
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-    <Property Name="DilID" Type="int" Nullable="false" />
-    <Property Name="SirketID" Type="int" Nullable="false" />
+    <Property Name="DilID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SirketID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="KullaniciID" Type="nvarchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="FaturaBilgi">
     <Key>
@@ -282,17 +284,16 @@
       <PropertyRef Name="GrupID" />
     </Key>
     <Property Name="GrupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="AlanID" Type="int" Nullable="false" />
-    <Property Name="UstGrupID" Type="int" Nullable="false" />
-    <Property Name="AlanTipi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="AlanTipi" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="UstGrupID" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="GrupAd" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="AktifMi" Type="bit" Nullable="false" />
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-    <Property Name="DilID" Type="int" Nullable="false" />
-    <Property Name="SirketID" Type="int" Nullable="false" />
-    <Property Name="KullaniciID" Type="int" Nullable="false" />
+    <Property Name="DilID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SirketID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="KullaniciID" Type="nvarchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="HareketSecim">
     <Key>
@@ -332,15 +333,15 @@
       <PropertyRef Name="IlceID" />
     </Key>
     <Property Name="IlceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="SehirID" Type="int" Nullable="false" />
+    <Property Name="SehirID" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="IlceAd" Type="nvarchar" MaxLength="75" Nullable="false" />
     <Property Name="AktifMi" Type="bit" Nullable="false" />
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-    <Property Name="DilID" Type="int" Nullable="false" />
-    <Property Name="KullaniciID" Type="int" Nullable="false" />
-    <Property Name="SirketID" Type="int" Nullable="false" />
+    <Property Name="DilID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="KullaniciID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SirketID" Type="nvarchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="KasaHareket">
     <Key>
@@ -467,15 +468,15 @@
       <PropertyRef Name="SehirID" />
     </Key>
     <Property Name="SehirID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UlkeID" Type="int" Nullable="false" />
+    <Property Name="UlkeID" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="SehirAd" Type="nvarchar" MaxLength="75" Nullable="false" />
     <Property Name="AktifMi" Type="bit" Nullable="false" />
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-    <Property Name="DilID" Type="int" Nullable="false" />
-    <Property Name="SirketID" Type="int" Nullable="false" />
-    <Property Name="KullaniciID" Type="int" Nullable="false" />
+    <Property Name="DilID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SirketID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="KullaniciID" Type="nvarchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="Senet">
     <Key>
@@ -631,9 +632,9 @@
     <Property Name="SilindiMi" Type="bit" Nullable="false" />
     <Property Name="KayitTarih" Type="datetime" Nullable="false" />
     <Property Name="GuncellemeTarih" Type="datetime" Nullable="false" />
-    <Property Name="DilID" Type="int" Nullable="false" />
-    <Property Name="KullaniciID" Type="int" Nullable="false" />
-    <Property Name="SirketID" Type="int" Nullable="false" />
+    <Property Name="DilID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="KullaniciID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SirketID" Type="nvarchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="Yetki">
     <Key>

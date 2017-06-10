@@ -107,6 +107,17 @@
     <Compile Include="DTO\DovizBirim\DovizBirimListeDTO.cs" />
     <Compile Include="DTO\DovizBirim\DovizBirimOzelDTO.cs" />
     <Compile Include="DTO\DovizBirim\DovizBirimTumDTO.cs" />
+    <Compile Include="DTO\Exceptions\MyAggregateException.cs" />
+    <Compile Include="DTO\Exceptions\MyArgumentException.cs" />
+    <Compile Include="DTO\Exceptions\MyArgumentNullException.cs" />
+    <Compile Include="DTO\Exceptions\MyDbEntityValidationException.cs" />
+    <Compile Include="DTO\Exceptions\MyDirectoryNotFoundException.cs" />
+    <Compile Include="DTO\Exceptions\MyFileNotFoundException.cs" />
+    <Compile Include="DTO\Exceptions\MyFormatException.cs" />
+    <Compile Include="DTO\Exceptions\MyInvalidOperationException.cs" />
+    <Compile Include="DTO\Exceptions\MyNotImplementedException.cs" />
+    <Compile Include="DTO\Exceptions\MyNullReferenceException.cs" />
+    <Compile Include="DTO\Exceptions\MyPathTooLongException.cs" />
     <Compile Include="DTO\Exceptions\NotModifiedDataOnDatabaseCustomException.cs" />
     <Compile Include="DTO\Exceptions\NullDataOnDatabaseCustomException.cs" />
     <Compile Include="DTO\FaturaBilgi\FaturaBilgiFiltreDTO.cs" />

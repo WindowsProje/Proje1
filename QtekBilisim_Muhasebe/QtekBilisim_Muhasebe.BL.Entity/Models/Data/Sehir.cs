@@ -15,14 +15,14 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
     public partial class Sehir
     {
         public int SehirID { get; set; }
-        public int UlkeID { get; set; }
+        public string UlkeID { get; set; }
         public string SehirAd { get; set; }
         public bool AktifMi { get; set; }
         public bool SilindiMi { get; set; }
         public System.DateTime KayitTarih { get; set; }
         public System.DateTime GuncellemeTarih { get; set; }
-        public int DilID { get; set; }
-        public int SirketID { get; set; }
-        public int KullaniciID { get; set; }
+        public string DilID { get; set; }
+        public string SirketID { get; set; }
+        public string KullaniciID { get; set; }
     }
 }

@@ -9,5 +9,6 @@ namespace QtekBilisim_Muhasebe.BL.Repository.Repositories
 {
     public interface ICariKayitRepository:IRepository<CariKayit>
     {
+        string CariKodGetir();
     }
 }

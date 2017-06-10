@@ -9,7 +9,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Ilce
     public class IlceTumDTO:Model
     {
         public int IlceID { get; set; }
-        public int SehirID { get; set; }
+        public string SehirID { get; set; }
         public string IlceAd { get; set; }
     }
 }

@@ -9,12 +9,12 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
     public class Model : IModel
     {
         private bool _aktifMi;
-        private int _dilID;
+        private string _dilID;
         private DateTime _guncellemeTarih;
         private DateTime _kayitTarihi;
-        private int _kullaniciID;
+        private string _kullaniciID;
         private bool _silindiMi;
-        private int _sirketID;
+        private string _sirketID;
         
         public bool AktifMi
         {
@@ -28,7 +28,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
                 _aktifMi = value;
             }
         }
-        public int DilID
+        public string DilID
         {
             get
             {
@@ -65,7 +65,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
             }
         }
 
-        public int KullaniciID
+        public string KullaniciID
         {
             get
             {
@@ -90,7 +90,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
                 _silindiMi = value;
             }
         }
-        public int SirketID
+        public string SirketID
         {
             get
             {

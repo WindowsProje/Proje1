@@ -9,6 +9,6 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.CariKayit
     public class CariKayitListeDTO
     {
         public int CariID { get; set; }
-        public int IlceID { get; set; }
+        public string IlceID { get; set; }
     }
 }

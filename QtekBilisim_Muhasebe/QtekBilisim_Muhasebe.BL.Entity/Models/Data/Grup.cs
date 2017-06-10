@@ -15,16 +15,15 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
     public partial class Grup
     {
         public int GrupID { get; set; }
-        public int AlanID { get; set; }
-        public int UstGrupID { get; set; }
         public string AlanTipi { get; set; }
+        public string UstGrupID { get; set; }
         public string GrupAd { get; set; }
         public bool AktifMi { get; set; }
         public bool SilindiMi { get; set; }
         public System.DateTime KayitTarih { get; set; }
         public System.DateTime GuncellemeTarih { get; set; }
-        public int DilID { get; set; }
-        public int SirketID { get; set; }
-        public int KullaniciID { get; set; }
+        public string DilID { get; set; }
+        public string SirketID { get; set; }
+        public string KullaniciID { get; set; }
     }
 }

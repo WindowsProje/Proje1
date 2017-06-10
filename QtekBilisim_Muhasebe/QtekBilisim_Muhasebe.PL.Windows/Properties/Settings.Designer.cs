@@ -49,13 +49,37 @@ namespace QtekBilisim_Muhasebe.PL.Windows.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public string DilID {
             get {
                 return ((string)(this["DilID"]));
             }
             set {
                 this["DilID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Muhasebe")]
+        public string ResimKlasorYolu {
+            get {
+                return ((string)(this["ResimKlasorYolu"]));
+            }
+            set {
+                this["ResimKlasorYolu"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Cariler")]
+        public string CariKlasorAdi {
+            get {
+                return ((string)(this["CariKlasorAdi"]));
+            }
+            set {
+                this["CariKlasorAdi"] = value;
             }
         }
     }

@@ -12,7 +12,7 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
 {
     static class HataKayitManager
     {
-        public static string HataKayitEkle(Exception error)
+        public static void HataKayitEkle(Exception error)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
                     int year = DateTime.Now.Year;
                     int month = DateTime.Now.Month;
                     int day = DateTime.Now.Day;
-                    string errorCode = "EC" + year + month + day + "-" + code.Substring(0, 12);
+                    string errorCode = "EC" + "_" + year + month + day + "-" + code.Substring(0, 12);
                     string innerException = string.Empty;
                     if (error.InnerException != null)
                     {
@@ -64,18 +64,10 @@ namespace QtekBilisim_Muhasebe.DAL.Service.Services
                             unitOfWork.StackTraceFrames.AddDataRange(lst);
                             unitOfWork.Complete();
                         }
-                        return errorCode;
-                    }
-                    else
-                    {
-                        return string.Empty;
                     }
                 }
             }
-            catch
-            {
-                return string.Empty;
-            }
+            catch { }
         }
     }
 }

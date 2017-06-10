@@ -14,7 +14,7 @@
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.BorcBakiye" Width="1.5" PointX="6.75" PointY="0.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.CariHareket" Width="1.5" PointX="6.75" PointY="4.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.CariKayit" Width="1.5" PointX="8.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Cek" Width="1.5" PointX="8.75" PointY="8.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Cek" Width="1.5" PointX="8.75" PointY="9.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.DepoKayit" Width="1.5" PointX="10.75" PointY="0.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Dil" Width="1.5" PointX="10.75" PointY="4.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Dosya" Width="1.5" PointX="10.75" PointY="8.75" />
@@ -23,9 +23,9 @@
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Grup" Width="1.5" PointX="4.75" PointY="11.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.HareketSecim" Width="1.5" PointX="12.75" PointY="0.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.HataKayit" Width="1.5" PointX="12.75" PointY="4.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Ilce" Width="1.5" PointX="6.75" PointY="12.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.KasaHareket" Width="1.5" PointX="8.75" PointY="12.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.KasaKayit" Width="1.5" PointX="12.75" PointY="9.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Ilce" Width="1.5" PointX="12.75" PointY="9.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.KasaHareket" Width="1.5" PointX="6.75" PointY="13.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.KasaKayit" Width="1.5" PointX="8.75" PointY="13.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.KdvOran" Width="1.5" PointX="10.75" PointY="13.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.KrediKart" Width="1.5" PointX="12.75" PointY="13.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Kullanici" Width="1.5" PointX="14.75" PointY="0.75" />
@@ -34,17 +34,17 @@
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.SatisFiyat" Width="1.5" PointX="14.75" PointY="13.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Sehir" Width="1.5" PointX="16.75" PointY="0.75" />
         <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Senet" Width="1.5" PointX="16.75" PointY="4.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.SirketKayit" Width="1.5" PointX="4.75" PointY="16.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.SirketTur" Width="1.5" PointX="16.75" PointY="8.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.StackTraceFrame" Width="1.5" PointX="16.75" PointY="12.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.StokBakiyeUyari" Width="1.5" PointX="16.75" PointY="15.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.StokHareket" Width="1.5" PointX="0.75" PointY="17.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.StokKayit" Width="1.5" PointX="6.75" PointY="17.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.TedarikciBilgi" Width="1.5" PointX="8.75" PointY="17.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Ulke" Width="1.5" PointX="10.75" PointY="17.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Yetki" Width="1.5" PointX="18.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.YetkiAlan" Width="1.5" PointX="18.75" PointY="4.75" />
-        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.YetkiDetay" Width="1.5" PointX="18.75" PointY="8.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.SirketKayit" Width="1.5" PointX="16.75" PointY="8.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.SirketTur" Width="1.5" PointX="16.75" PointY="14.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.StackTraceFrame" Width="1.5" PointX="0.75" PointY="17.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.StokBakiyeUyari" Width="1.5" PointX="2.75" PointY="17.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.StokHareket" Width="1.5" PointX="8.75" PointY="17.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.StokKayit" Width="1.5" PointX="10.75" PointY="17.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.TedarikciBilgi" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Ulke" Width="1.5" PointX="4.75" PointY="18.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.Yetki" Width="1.5" PointX="18.75" PointY="5.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.YetkiAlan" Width="1.5" PointX="18.75" PointY="9.75" />
+        <EntityTypeShape EntityType="QtekBilisim_MuhasebeDbModel.YetkiDetay" Width="1.5" PointX="12.75" PointY="18.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

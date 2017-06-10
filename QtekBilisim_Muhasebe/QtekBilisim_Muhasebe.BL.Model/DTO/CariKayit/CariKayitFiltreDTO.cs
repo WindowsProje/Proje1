@@ -8,5 +8,6 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.CariKayit
 {
     public class CariKayitFiltreDTO:Filtre
     {
+
     }
 }

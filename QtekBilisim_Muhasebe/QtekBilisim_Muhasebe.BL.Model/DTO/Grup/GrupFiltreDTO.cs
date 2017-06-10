@@ -8,5 +8,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Grup
 {
     public class GrupFiltreDTO:Filtre
     {
+        public string AlanTipi { get; set; }
+        public string UstGrupID { get; set; }
     }
 }

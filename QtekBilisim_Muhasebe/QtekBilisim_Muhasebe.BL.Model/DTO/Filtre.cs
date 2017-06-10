@@ -9,10 +9,10 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
     public class Filtre:IFiltre
     {
         private bool _aktifMi;
-        private int _dilID;
-        private int _kullaniciID;
+        private string _dilID;
+        private string _kullaniciID;
         private bool _silindiMi;
-        private int _sirketID;
+        private string _sirketID;
 
         public bool AktifMi
         {
@@ -26,7 +26,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
                 _aktifMi = value;
             }
         }
-        public int DilID
+        public string DilID
         {
             get
             {
@@ -39,7 +39,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
             }
         }
 
-        public int KullaniciID
+        public string KullaniciID
         {
             get
             {
@@ -64,7 +64,7 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
                 _silindiMi = value;
             }
         }
-        public int SirketID
+        public string SirketID
         {
             get
             {

@@ -8,10 +8,10 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
 {
     public interface IFiltre
     {
-        int DilID { get; set; }
+        string DilID { get; set; }
         bool AktifMi { get; set; }
         bool SilindiMi { get; set; }
-        int SirketID { get; set; }
-        int KullaniciID { get; set; }
+        string SirketID { get; set; }
+        string KullaniciID { get; set; }
     }
 }

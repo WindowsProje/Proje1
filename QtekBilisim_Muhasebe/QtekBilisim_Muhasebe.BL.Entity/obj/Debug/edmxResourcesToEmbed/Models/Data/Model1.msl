@@ -185,6 +185,7 @@
           <ScalarProperty Name="Ad" ColumnName="Ad" />
           <ScalarProperty Name="TicariUnvan" ColumnName="TicariUnvan" />
           <ScalarProperty Name="CariKod" ColumnName="CariKod" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
           <ScalarProperty Name="DovizBirimID" ColumnName="DovizBirimID" />
           <ScalarProperty Name="IlceID" ColumnName="IlceID" />
           <ScalarProperty Name="CariID" ColumnName="CariID" />
@@ -258,6 +259,7 @@
     <EntitySetMapping Name="DovizBirim">
       <EntityTypeMapping TypeName="QtekBilisim_MuhasebeDbModel.DovizBirim">
         <MappingFragment StoreEntitySet="DovizBirim">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
           <ScalarProperty Name="SirketID" ColumnName="SirketID" />
           <ScalarProperty Name="DilID" ColumnName="DilID" />
           <ScalarProperty Name="GuncellemeTarih" ColumnName="GuncellemeTarih" />
@@ -304,9 +306,8 @@
           <ScalarProperty Name="SilindiMi" ColumnName="SilindiMi" />
           <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
           <ScalarProperty Name="GrupAd" ColumnName="GrupAd" />
-          <ScalarProperty Name="AlanTipi" ColumnName="AlanTipi" />
           <ScalarProperty Name="UstGrupID" ColumnName="UstGrupID" />
-          <ScalarProperty Name="AlanID" ColumnName="AlanID" />
+          <ScalarProperty Name="AlanTipi" ColumnName="AlanTipi" />
           <ScalarProperty Name="GrupID" ColumnName="GrupID" />
         </MappingFragment>
       </EntityTypeMapping>

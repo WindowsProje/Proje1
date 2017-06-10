@@ -10,6 +10,9 @@ using System.Data;
 using System.IO;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using QtekBilisim_Muhasebe.BL.Model.DTO.CariKayit;
+using QtekBilisim_Muhasebe.BL.Model.DTO.Exceptions;
+using System.Collections;
 
 namespace QtekBilisim_Muhasebe.Test.UnitTestProject
 {
@@ -27,6 +30,18 @@ namespace QtekBilisim_Muhasebe.Test.UnitTestProject
                 //{
                 //    Muhasebeci = "ewrgerw"
                 //});
+                CariKayitManager cm = new CariKayitManager();
+                CariKayitTumDTO c = new CariKayitTumDTO();
+                string temp = cm.EnSonCariKoduGetir();
+            }
+            catch (MyNotImplementedException error)
+            {
+                foreach (DictionaryEntry item in error.Data)
+                {
+
+                }
+                string temp = error.Message;
+                throw new DirectoryNotFoundException(error.Message);
             }
             catch (DirectoryNotFoundException error)
             {

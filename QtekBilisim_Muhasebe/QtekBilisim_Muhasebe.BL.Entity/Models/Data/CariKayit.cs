@@ -15,8 +15,9 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
     public partial class CariKayit
     {
         public int CariID { get; set; }
-        public int IlceID { get; set; }
-        public int DovizBirimID { get; set; }
+        public string IlceID { get; set; }
+        public string DovizBirimID { get; set; }
+        public string GrupID { get; set; }
         public string CariKod { get; set; }
         public string TicariUnvan { get; set; }
         public string Ad { get; set; }
@@ -32,9 +33,9 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public string OzelKod_2 { get; set; }
         public string OzelKod_3 { get; set; }
         public string Resim { get; set; }
-        public int Iskonto { get; set; }
-        public int KullanilacakStokFiyat { get; set; }
-        public int Vade { get; set; }
+        public string Iskonto { get; set; }
+        public string KullanilacakStokFiyat { get; set; }
+        public string Vade { get; set; }
         public string KaraListe { get; set; }
         public string Not { get; set; }
         public bool DovizHesabiVarMi { get; set; }
@@ -43,8 +44,8 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public bool SilindiMi { get; set; }
         public System.DateTime KayitTarih { get; set; }
         public System.DateTime GuncellemeTarih { get; set; }
-        public int DilID { get; set; }
-        public int SirketID { get; set; }
-        public int KullaniciID { get; set; }
+        public string DilID { get; set; }
+        public string SirketID { get; set; }
+        public string KullaniciID { get; set; }
     }
 }

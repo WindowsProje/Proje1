@@ -21,7 +21,8 @@ namespace QtekBilisim_Muhasebe.BL.Entity.Models.Data
         public bool SilindiMi { get; set; }
         public System.DateTime KayitTarih { get; set; }
         public System.DateTime GuncellemeTarih { get; set; }
-        public int DilID { get; set; }
-        public int SirketID { get; set; }
+        public string DilID { get; set; }
+        public string SirketID { get; set; }
+        public string KullaniciID { get; set; }
     }
 }

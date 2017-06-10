@@ -12,13 +12,21 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Exceptions
         {
 
         }
-        public NullDataOnDatabaseCustomException(string message) :base(message)
+        public NullDataOnDatabaseCustomException(string message) : base(message)
         {
 
         }
-        public NullDataOnDatabaseCustomException(string message, Exception error):base(message, error)
+        public NullDataOnDatabaseCustomException(string message, Exception error) : base(message, error)
         {
 
         }
+        public override string Message
+        {
+            get
+            {
+                return "Null Data On Database Custom Exception";
+            }
+        }
+        
     }
 }

@@ -12,8 +12,8 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO
         bool SilindiMi { get; set; }
         DateTime KayitTarih { get; set; }
         DateTime GuncellemeTarih { get; set; }
-        int DilID { get; set; }
-        int SirketID { get; set; }
-        int KullaniciID { get; set; }
+        string DilID { get; set; }
+        string SirketID { get; set; }
+        string KullaniciID { get; set; }
     }
 }

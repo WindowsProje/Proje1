@@ -8,6 +8,6 @@ namespace QtekBilisim_Muhasebe.BL.Model.DTO.Ilce
 {
     public class IlceFiltreDTO:Filtre
     {
-        public int SehirID { get; set; }
+        public string SehirID { get; set; }
     }
 }

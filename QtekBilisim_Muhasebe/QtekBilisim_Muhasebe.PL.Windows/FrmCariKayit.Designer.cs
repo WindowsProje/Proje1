@@ -54,6 +54,10 @@
             this.cmbGrup = new System.Windows.Forms.ComboBox();
             this.btnKaldir = new System.Windows.Forms.Button();
             this.btnGozat = new System.Windows.Forms.Button();
+            this.mstxtTc = new System.Windows.Forms.MaskedTextBox();
+            this.mstxtFaks = new System.Windows.Forms.MaskedTextBox();
+            this.mstxtCep = new System.Windows.Forms.MaskedTextBox();
+            this.mstxtTelefon = new System.Windows.Forms.MaskedTextBox();
             this.pbxCariResim = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -65,6 +69,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,6 +78,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtOzelKod_3 = new System.Windows.Forms.TextBox();
             this.txtOzelKod_2 = new System.Windows.Forms.TextBox();
             this.txtOzelKod_1 = new System.Windows.Forms.TextBox();
             this.txtAdres = new System.Windows.Forms.TextBox();
@@ -97,12 +103,6 @@
             this.txtNot = new System.Windows.Forms.TextBox();
             this.txtVade = new System.Windows.Forms.TextBox();
             this.txtIskonto = new System.Windows.Forms.TextBox();
-            this.mstxtTc = new System.Windows.Forms.MaskedTextBox();
-            this.mstxtTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.mstxtCep = new System.Windows.Forms.MaskedTextBox();
-            this.mstxtFaks = new System.Windows.Forms.MaskedTextBox();
-            this.txtOzelKod_3 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -184,6 +184,7 @@
             this.btnIptal.Text = "İptal";
             this.btnIptal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnIptal.UseVisualStyleBackColor = false;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // btnSil
             // 
@@ -267,6 +268,7 @@
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKaydet.UseVisualStyleBackColor = false;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // btnEkle
             // 
@@ -287,6 +289,7 @@
             this.btnEkle.Text = "Ekle";
             this.btnEkle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEkle.UseVisualStyleBackColor = false;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // panel3
             // 
@@ -375,6 +378,7 @@
             this.btnKapat.Text = "Kapat";
             this.btnKapat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnKapat.UseVisualStyleBackColor = false;
+            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
             // TbControlGenelBilgiler
             // 
@@ -494,6 +498,7 @@
             this.cmbAraGrup.Name = "cmbAraGrup";
             this.cmbAraGrup.Size = new System.Drawing.Size(241, 29);
             this.cmbAraGrup.TabIndex = 55;
+            this.cmbAraGrup.SelectedIndexChanged += new System.EventHandler(this.cmbAraGrup_SelectedIndexChanged);
             // 
             // cmbDurumu
             // 
@@ -514,6 +519,7 @@
             this.cmbGrup.Name = "cmbGrup";
             this.cmbGrup.Size = new System.Drawing.Size(241, 29);
             this.cmbGrup.TabIndex = 55;
+            this.cmbGrup.SelectedIndexChanged += new System.EventHandler(this.cmbGrup_SelectedIndexChanged);
             // 
             // btnKaldir
             // 
@@ -540,6 +546,46 @@
             this.btnGozat.Text = "Gözat";
             this.btnGozat.UseVisualStyleBackColor = false;
             this.btnGozat.Click += new System.EventHandler(this.btnGozat_Click);
+            // 
+            // mstxtTc
+            // 
+            this.mstxtTc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mstxtTc.Location = new System.Drawing.Point(216, 531);
+            this.mstxtTc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mstxtTc.Mask = "00000000000";
+            this.mstxtTc.Name = "mstxtTc";
+            this.mstxtTc.Size = new System.Drawing.Size(127, 30);
+            this.mstxtTc.TabIndex = 51;
+            // 
+            // mstxtFaks
+            // 
+            this.mstxtFaks.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mstxtFaks.Location = new System.Drawing.Point(848, 385);
+            this.mstxtFaks.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mstxtFaks.Mask = "(999) 000-0000";
+            this.mstxtFaks.Name = "mstxtFaks";
+            this.mstxtFaks.Size = new System.Drawing.Size(241, 30);
+            this.mstxtFaks.TabIndex = 51;
+            // 
+            // mstxtCep
+            // 
+            this.mstxtCep.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mstxtCep.Location = new System.Drawing.Point(849, 342);
+            this.mstxtCep.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mstxtCep.Mask = "(999) 000-0000";
+            this.mstxtCep.Name = "mstxtCep";
+            this.mstxtCep.Size = new System.Drawing.Size(241, 30);
+            this.mstxtCep.TabIndex = 51;
+            // 
+            // mstxtTelefon
+            // 
+            this.mstxtTelefon.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mstxtTelefon.Location = new System.Drawing.Point(849, 293);
+            this.mstxtTelefon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mstxtTelefon.Mask = "(999) 000-0000";
+            this.mstxtTelefon.Name = "mstxtTelefon";
+            this.mstxtTelefon.Size = new System.Drawing.Size(241, 30);
+            this.mstxtTelefon.TabIndex = 51;
             // 
             // pbxCariResim
             // 
@@ -662,6 +708,17 @@
             this.label10.TabIndex = 47;
             this.label10.Text = "Adres :";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label20.Location = new System.Drawing.Point(660, 349);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(154, 23);
+            this.label20.TabIndex = 48;
+            this.label20.Text = "Cep Numarası : ";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -750,6 +807,15 @@
             this.label2.TabIndex = 30;
             this.label2.Text = "Ticari Ünvan :";
             // 
+            // txtOzelKod_3
+            // 
+            this.txtOzelKod_3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtOzelKod_3.Location = new System.Drawing.Point(852, 669);
+            this.txtOzelKod_3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtOzelKod_3.Name = "txtOzelKod_3";
+            this.txtOzelKod_3.Size = new System.Drawing.Size(241, 30);
+            this.txtOzelKod_3.TabIndex = 16;
+            // 
             // txtOzelKod_2
             // 
             this.txtOzelKod_2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -820,6 +886,7 @@
             this.txtCariKodu.Location = new System.Drawing.Point(218, 209);
             this.txtCariKodu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCariKodu.Name = "txtCariKodu";
+            this.txtCariKodu.ReadOnly = true;
             this.txtCariKodu.Size = new System.Drawing.Size(166, 30);
             this.txtCariKodu.TabIndex = 28;
             // 
@@ -1004,66 +1071,6 @@
             this.txtIskonto.Name = "txtIskonto";
             this.txtIskonto.Size = new System.Drawing.Size(164, 30);
             this.txtIskonto.TabIndex = 17;
-            // 
-            // mstxtTc
-            // 
-            this.mstxtTc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mstxtTc.Location = new System.Drawing.Point(216, 531);
-            this.mstxtTc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.mstxtTc.Mask = "00000000000";
-            this.mstxtTc.Name = "mstxtTc";
-            this.mstxtTc.Size = new System.Drawing.Size(127, 30);
-            this.mstxtTc.TabIndex = 51;
-            // 
-            // mstxtTelefon
-            // 
-            this.mstxtTelefon.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mstxtTelefon.Location = new System.Drawing.Point(849, 293);
-            this.mstxtTelefon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.mstxtTelefon.Mask = "(999) 000-0000";
-            this.mstxtTelefon.Name = "mstxtTelefon";
-            this.mstxtTelefon.Size = new System.Drawing.Size(241, 30);
-            this.mstxtTelefon.TabIndex = 51;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(660, 349);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(154, 23);
-            this.label20.TabIndex = 48;
-            this.label20.Text = "Cep Numarası : ";
-            // 
-            // mstxtCep
-            // 
-            this.mstxtCep.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mstxtCep.Location = new System.Drawing.Point(849, 342);
-            this.mstxtCep.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.mstxtCep.Mask = "(999) 000-0000";
-            this.mstxtCep.Name = "mstxtCep";
-            this.mstxtCep.Size = new System.Drawing.Size(241, 30);
-            this.mstxtCep.TabIndex = 51;
-            // 
-            // mstxtFaks
-            // 
-            this.mstxtFaks.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mstxtFaks.Location = new System.Drawing.Point(848, 385);
-            this.mstxtFaks.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.mstxtFaks.Mask = "(999) 000-0000";
-            this.mstxtFaks.Name = "mstxtFaks";
-            this.mstxtFaks.Size = new System.Drawing.Size(241, 30);
-            this.mstxtFaks.TabIndex = 51;
-            // 
-            // txtOzelKod_3
-            // 
-            this.txtOzelKod_3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOzelKod_3.Location = new System.Drawing.Point(852, 669);
-            this.txtOzelKod_3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtOzelKod_3.Name = "txtOzelKod_3";
-            this.txtOzelKod_3.Size = new System.Drawing.Size(241, 30);
-            this.txtOzelKod_3.TabIndex = 16;
             // 
             // openFileDialog1
             // 
